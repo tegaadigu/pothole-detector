@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200D37BB27200E3C148B34CB /* Pods_Pothole_DetectorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9C1ADBF51641A450E27B36 /* Pods_Pothole_DetectorUITests.framework */; };
+		792CFFD1478DDAB1F5D6DA04 /* Pods_Pothole_Detector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D20AD075DE9535542E54354 /* Pods_Pothole_Detector.framework */; };
+		8B49C25B21B740C200293EBC /* PotholeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B49C25A21B740C100293EBC /* PotholeModel.swift */; };
 		8BF873B021B306840041CCF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF873AF21B306840041CCF1 /* AppDelegate.swift */; };
 		8BF873B221B306840041CCF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF873B121B306840041CCF1 /* ViewController.swift */; };
 		8BF873B521B306840041CCF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF873B321B306840041CCF1 /* Main.storyboard */; };
@@ -14,6 +17,7 @@
 		8BF873BA21B306880041CCF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF873B821B306880041CCF1 /* LaunchScreen.storyboard */; };
 		8BF873C521B306880041CCF1 /* Pothole_DetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF873C421B306880041CCF1 /* Pothole_DetectorTests.swift */; };
 		8BF873D021B306880041CCF1 /* Pothole_DetectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF873CF21B306880041CCF1 /* Pothole_DetectorUITests.swift */; };
+		B19D5B4D32781808CED4739F /* Pods_Pothole_DetectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366058C499C9F4C5756E90B2 /* Pods_Pothole_DetectorTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		019102B5942722E4D6F90888 /* Pods-Pothole DetectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pothole DetectorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pothole DetectorTests/Pods-Pothole DetectorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		083E09CCAD70ECDC5C1C80AF /* Pods-Pothole DetectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pothole DetectorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pothole DetectorTests/Pods-Pothole DetectorTests.release.xcconfig"; sourceTree = "<group>"; };
+		176FC030822C8922E54BB48B /* Pods-Pothole Detector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pothole Detector.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pothole Detector/Pods-Pothole Detector.release.xcconfig"; sourceTree = "<group>"; };
+		366058C499C9F4C5756E90B2 /* Pods_Pothole_DetectorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pothole_DetectorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D20AD075DE9535542E54354 /* Pods_Pothole_Detector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pothole_Detector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F8B135ACF7FDB375434C87 /* Pods-Pothole DetectorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pothole DetectorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pothole DetectorUITests/Pods-Pothole DetectorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8B49C25A21B740C100293EBC /* PotholeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotholeModel.swift; sourceTree = "<group>"; };
 		8BF873AC21B306840041CCF1 /* Pothole Detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pothole Detector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF873AF21B306840041CCF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BF873B121B306840041CCF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,9 @@
 		8BF873CB21B306880041CCF1 /* Pothole DetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pothole DetectorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF873CF21B306880041CCF1 /* Pothole_DetectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pothole_DetectorUITests.swift; sourceTree = "<group>"; };
 		8BF873D121B306880041CCF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADAA9167BF58ACF2ED925715 /* Pods-Pothole Detector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pothole Detector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pothole Detector/Pods-Pothole Detector.debug.xcconfig"; sourceTree = "<group>"; };
+		BA9C1ADBF51641A450E27B36 /* Pods_Pothole_DetectorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pothole_DetectorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA483120B5575EB4AE8D4761 /* Pods-Pothole DetectorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pothole DetectorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pothole DetectorUITests/Pods-Pothole DetectorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				792CFFD1478DDAB1F5D6DA04 /* Pods_Pothole_Detector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B19D5B4D32781808CED4739F /* Pods_Pothole_DetectorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				200D37BB27200E3C148B34CB /* Pods_Pothole_DetectorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F7109A581064B5E7CE46117 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D20AD075DE9535542E54354 /* Pods_Pothole_Detector.framework */,
+				366058C499C9F4C5756E90B2 /* Pods_Pothole_DetectorTests.framework */,
+				BA9C1ADBF51641A450E27B36 /* Pods_Pothole_DetectorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8BF873A321B306840041CCF1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +108,8 @@
 				8BF873C321B306880041CCF1 /* Pothole DetectorTests */,
 				8BF873CE21B306880041CCF1 /* Pothole DetectorUITests */,
 				8BF873AD21B306840041CCF1 /* Products */,
+				E605A1C97C6FDF81ABF0C0F7 /* Pods */,
+				0F7109A581064B5E7CE46117 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +132,7 @@
 				8BF873B621B306880041CCF1 /* Assets.xcassets */,
 				8BF873B821B306880041CCF1 /* LaunchScreen.storyboard */,
 				8BF873BB21B306880041CCF1 /* Info.plist */,
+				8B49C25A21B740C100293EBC /* PotholeModel.swift */,
 			);
 			path = "Pothole Detector";
 			sourceTree = "<group>";
@@ -125,6 +155,19 @@
 			path = "Pothole DetectorUITests";
 			sourceTree = "<group>";
 		};
+		E605A1C97C6FDF81ABF0C0F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADAA9167BF58ACF2ED925715 /* Pods-Pothole Detector.debug.xcconfig */,
+				176FC030822C8922E54BB48B /* Pods-Pothole Detector.release.xcconfig */,
+				019102B5942722E4D6F90888 /* Pods-Pothole DetectorTests.debug.xcconfig */,
+				083E09CCAD70ECDC5C1C80AF /* Pods-Pothole DetectorTests.release.xcconfig */,
+				EA483120B5575EB4AE8D4761 /* Pods-Pothole DetectorUITests.debug.xcconfig */,
+				84F8B135ACF7FDB375434C87 /* Pods-Pothole DetectorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BF873D421B306880041CCF1 /* Build configuration list for PBXNativeTarget "Pothole Detector" */;
 			buildPhases = (
+				9C29B8BA3EA5231E77895C95 /* [CP] Check Pods Manifest.lock */,
 				8BF873A821B306840041CCF1 /* Sources */,
 				8BF873A921B306840041CCF1 /* Frameworks */,
 				8BF873AA21B306840041CCF1 /* Resources */,
+				946D9573CE067B3DA1A6E6B5 /* [CP] Embed Pods Frameworks */,
+				8CC494F6A6E955CDDFD66FF5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BF873D721B306880041CCF1 /* Build configuration list for PBXNativeTarget "Pothole DetectorTests" */;
 			buildPhases = (
+				36ED8561133FDFE367D192AC /* [CP] Check Pods Manifest.lock */,
 				8BF873BC21B306880041CCF1 /* Sources */,
 				8BF873BD21B306880041CCF1 /* Frameworks */,
 				8BF873BE21B306880041CCF1 /* Resources */,
+				2F12217EF85030B6CF9F62E5 /* [CP] Embed Pods Frameworks */,
+				61A5388CA1045EB6F8802E8F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BF873DA21B306880041CCF1 /* Build configuration list for PBXNativeTarget "Pothole DetectorUITests" */;
 			buildPhases = (
+				0C88F59F0CAC19C83707F56E /* [CP] Check Pods Manifest.lock */,
 				8BF873C721B306880041CCF1 /* Sources */,
 				8BF873C821B306880041CCF1 /* Frameworks */,
 				8BF873C921B306880041CCF1 /* Resources */,
+				5D78818B3926F17A559B83D7 /* [CP] Embed Pods Frameworks */,
+				C871412A958ADD12C744179F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,11 +303,162 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C88F59F0CAC19C83707F56E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pothole DetectorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F12217EF85030B6CF9F62E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pothole DetectorTests/Pods-Pothole DetectorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36ED8561133FDFE367D192AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pothole DetectorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D78818B3926F17A559B83D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pothole DetectorUITests/Pods-Pothole DetectorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61A5388CA1045EB6F8802E8F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pothole DetectorTests/Pods-Pothole DetectorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CC494F6A6E955CDDFD66FF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pothole Detector/Pods-Pothole Detector-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		946D9573CE067B3DA1A6E6B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pothole Detector/Pods-Pothole Detector-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pothole Detector/Pods-Pothole Detector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C29B8BA3EA5231E77895C95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pothole Detector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C871412A958ADD12C744179F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pothole DetectorUITests/Pods-Pothole DetectorUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8BF873A821B306840041CCF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B49C25B21B740C200293EBC /* PotholeModel.swift in Sources */,
 				8BF873B221B306840041CCF1 /* ViewController.swift in Sources */,
 				8BF873B021B306840041CCF1 /* AppDelegate.swift in Sources */,
 			);
@@ -430,6 +633,7 @@
 		};
 		8BF873D521B306880041CCF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADAA9167BF58ACF2ED925715 /* Pods-Pothole Detector.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +652,7 @@
 		};
 		8BF873D621B306880041CCF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 176FC030822C8922E54BB48B /* Pods-Pothole Detector.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +671,7 @@
 		};
 		8BF873D821B306880041CCF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 019102B5942722E4D6F90888 /* Pods-Pothole DetectorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +693,7 @@
 		};
 		8BF873D921B306880041CCF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 083E09CCAD70ECDC5C1C80AF /* Pods-Pothole DetectorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +715,7 @@
 		};
 		8BF873DB21B306880041CCF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA483120B5575EB4AE8D4761 /* Pods-Pothole DetectorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +736,7 @@
 		};
 		8BF873DC21B306880041CCF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84F8B135ACF7FDB375434C87 /* Pods-Pothole DetectorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

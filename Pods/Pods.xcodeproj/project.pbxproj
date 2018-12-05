@@ -1,0 +1,886 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0286C1FBED69D667235A7DDA2AAD0EDC /* Pods-Pothole DetectorUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53B333E4B3EE73BAE5A1010E6EB389EE /* Pods-Pothole DetectorUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21B039832C3EE2844EF181CBA93926B4 /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A697DF2FCE66AA6D825AB2713FAFD4E /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47B13F2FA41D130A4EE0490410AE5B28 /* Pods-Pothole DetectorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF54ABBF746A414A56488B8F964B430 /* Pods-Pothole DetectorTests-dummy.m */; };
+		6EDF74968B1717109193B45EFAA55B20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		6EFC6B88EE34CF6DDC1CCDE4670CAA40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7374F5525994EFCF0895F6E8414108A5 /* Pods-Pothole Detector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 036827DADF7F54F3CF63AFD20AB0C593 /* Pods-Pothole Detector-dummy.m */; };
+		7FF48592C7ED149DA18B1FDC0E2128E1 /* Pods-Pothole DetectorUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B665D0D199F7AADC9B521730C08799B7 /* Pods-Pothole DetectorUITests-dummy.m */; };
+		B3373DAABF1507773B370C5BFA6997BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C10652595E91FD96576E358E24C73334 /* UISideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4F5E4E267C03BAC23C64C2DEC825B6 /* UISideMenuNavigationController.swift */; };
+		C1271B6A7B8CA07E8603632BEC453997 /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0049F4BA49D06E8F4C1A0DF192A1FB11 /* SideMenuManager.swift */; };
+		CA87D611488DCD70366550844FEB236F /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEFF7ED29543D1E78DEE7A6BB17CADE /* SideMenu-dummy.m */; };
+		D094D4C6101939A28D6C9302A9575782 /* Pods-Pothole Detector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53B2FAD2DA2F4AF65809AAC08FC609ED /* Pods-Pothole Detector-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0BE5002DC17D6D9FB0FDC3486DB5498 /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FF13F0BB1AB42B2F1C6A72A59BD82F /* UITableViewVibrantCell.swift */; };
+		E26AD53DDE8B662EB604465831A88D43 /* Pods-Pothole DetectorTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 415156D03394796D3FD1B587E48F86EB /* Pods-Pothole DetectorTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5B181D279D996FB155D518C72CDC347 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		EFF60502DC52B37088A61E8925831851 /* SideMenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB323BB3B2B0A52D555C01DBCD0305 /* SideMenuTransition.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5A21EBF70F62130E224EF0935EE930F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1B19660572568F38B937B44F319DDB4;
+			remoteInfo = SideMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0049F4BA49D06E8F4C1A0DF192A1FB11 /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
+		036827DADF7F54F3CF63AFD20AB0C593 /* Pods-Pothole Detector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pothole Detector-dummy.m"; sourceTree = "<group>"; };
+		058148D08F28DBA1483A23199BCD6326 /* Pods-Pothole DetectorTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pothole DetectorTests-frameworks.sh"; sourceTree = "<group>"; };
+		0A17700933927FE59E0287EA2FFAF2C7 /* Pods-Pothole DetectorUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pothole DetectorUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0AC3F6E2B85B64D7AED49071CEB17CA8 /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
+		152BA01734CECA818B0D5F43D9691252 /* Pods-Pothole Detector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pothole Detector.release.xcconfig"; sourceTree = "<group>"; };
+		155DCF4FAF6A287A11CBEF76D47EB5DA /* Pods-Pothole Detector-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pothole Detector-frameworks.sh"; sourceTree = "<group>"; };
+		166AA31FB2DCF7AD72720DEB041186DE /* Pods_Pothole_DetectorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pothole_DetectorUITests.framework; path = "Pods-Pothole DetectorUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FEFF7ED29543D1E78DEE7A6BB17CADE /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
+		2DA7C0E5132AC92750C14A1A5B73AC78 /* Pods-Pothole Detector-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pothole Detector-acknowledgements.markdown"; sourceTree = "<group>"; };
+		38FF13F0BB1AB42B2F1C6A72A59BD82F /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
+		3D239924A6AA20DA836964507ACFF669 /* Pods_Pothole_Detector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pothole_Detector.framework; path = "Pods-Pothole Detector.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F2EEB118BEF4D14F5D47C2148462D51 /* Pods-Pothole DetectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pothole DetectorTests.release.xcconfig"; sourceTree = "<group>"; };
+		415156D03394796D3FD1B587E48F86EB /* Pods-Pothole DetectorTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pothole DetectorTests-umbrella.h"; sourceTree = "<group>"; };
+		4F982E41455E145B88799D573D68FF7C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53B2FAD2DA2F4AF65809AAC08FC609ED /* Pods-Pothole Detector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pothole Detector-umbrella.h"; sourceTree = "<group>"; };
+		53B333E4B3EE73BAE5A1010E6EB389EE /* Pods-Pothole DetectorUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pothole DetectorUITests-umbrella.h"; sourceTree = "<group>"; };
+		5581B60EC8CB64346DADB3C84AFA4729 /* Pods-Pothole Detector-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pothole Detector-acknowledgements.plist"; sourceTree = "<group>"; };
+		57015A0CBF213E7DBA4008AF507C4709 /* Pods_Pothole_DetectorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pothole_DetectorTests.framework; path = "Pods-Pothole DetectorTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		570FCEDD502553573647FD8E79ED18C7 /* Pods-Pothole DetectorTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pothole DetectorTests-resources.sh"; sourceTree = "<group>"; };
+		606BD2B50ED98151BB84DE476A541232 /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenu.modulemap; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67B3368C6C7EB9AB132965189A7C3826 /* Pods-Pothole DetectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pothole DetectorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		69ABB1980F9A61A27758EC8C088A0360 /* Pods-Pothole Detector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pothole Detector.debug.xcconfig"; sourceTree = "<group>"; };
+		70C194D350C8AB0B1CE4D1C10A8BCCFB /* Pods-Pothole DetectorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pothole DetectorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		73335CEEDFC01A9D6165227C1476B0D7 /* Pods-Pothole DetectorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pothole DetectorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		75AC8354082F1ABE4886623F7401C61D /* Pods-Pothole DetectorTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pothole DetectorTests.modulemap"; sourceTree = "<group>"; };
+		798CE631799B2FE636A3F85E3AA25C67 /* Pods-Pothole Detector.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pothole Detector.modulemap"; sourceTree = "<group>"; };
+		7A697DF2FCE66AA6D825AB2713FAFD4E /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
+		7C22CF48C5D6E01BAB11D500FB7B68CF /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SideMenu.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		822AABC94440C43F06D54BFE99A5EDB8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FCC7420B6C716CEB1E989C86203DCFE /* Pods-Pothole DetectorUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pothole DetectorUITests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9980A35F618E647DC777C2E98C34D1EF /* Pods-Pothole Detector-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pothole Detector-resources.sh"; sourceTree = "<group>"; };
+		A5929BB0EF2B2E3D4DD1DE0050BEB68D /* Pods-Pothole DetectorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pothole DetectorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9DB323BB3B2B0A52D555C01DBCD0305 /* SideMenuTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransition.swift; path = Pod/Classes/SideMenuTransition.swift; sourceTree = "<group>"; };
+		B665D0D199F7AADC9B521730C08799B7 /* Pods-Pothole DetectorUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pothole DetectorUITests-dummy.m"; sourceTree = "<group>"; };
+		BA03990E71807E9F9F9D6AEF2A4C59CE /* Pods-Pothole DetectorUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pothole DetectorUITests-frameworks.sh"; sourceTree = "<group>"; };
+		C60488DC26F72BE4A963C7A2528C52E6 /* Pods-Pothole DetectorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pothole DetectorTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CAF54ABBF746A414A56488B8F964B430 /* Pods-Pothole DetectorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pothole DetectorTests-dummy.m"; sourceTree = "<group>"; };
+		DBD3A32746777EE8789A60E19ADAEC95 /* Pods-Pothole DetectorUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pothole DetectorUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E79FA211A9935903B039319AF981739B /* Pods-Pothole DetectorUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pothole DetectorUITests-resources.sh"; sourceTree = "<group>"; };
+		EA4F5E4E267C03BAC23C64C2DEC825B6 /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISideMenuNavigationController.swift; path = Pod/Classes/UISideMenuNavigationController.swift; sourceTree = "<group>"; };
+		EEAAA6BFA12D55FE654249B89D709200 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F16ADF0AD3E3FD5AF849CCDFE13E2738 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6A324E319F34D41C7D0ED3E277A50CD /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E13118B36F413F20E977A5C8A7A7150 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3373DAABF1507773B370C5BFA6997BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EC08667AF8C8673A51BA57F97FDA7EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EFC6B88EE34CF6DDC1CCDE4670CAA40 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A290243E1FCB15867610CD6BE3FFD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5B181D279D996FB155D518C72CDC347 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C74704CCAD852026D1752E1647E8B991 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EDF74968B1717109193B45EFAA55B20 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0588B462469020386FC4A4F5450A2C47 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEAAA6BFA12D55FE654249B89D709200 /* Info.plist */,
+				606BD2B50ED98151BB84DE476A541232 /* SideMenu.modulemap */,
+				F6A324E319F34D41C7D0ED3E277A50CD /* SideMenu.xcconfig */,
+				1FEFF7ED29543D1E78DEE7A6BB17CADE /* SideMenu-dummy.m */,
+				0AC3F6E2B85B64D7AED49071CEB17CA8 /* SideMenu-prefix.pch */,
+				7A697DF2FCE66AA6D825AB2713FAFD4E /* SideMenu-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SideMenu";
+			sourceTree = "<group>";
+		};
+		4C7DECB9505A3661801AB8D77F9249EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6139AD2A3B1702A32298B3F55914EA43 /* SideMenu */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		59021C21CE6AF244655B4BC38F74133D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				67D96C913516C3DFD6C13176E7EFE01D /* Pods-Pothole Detector */,
+				F7365EFC962068A41E678F1499B57C40 /* Pods-Pothole DetectorTests */,
+				DC1D2C86C7151B7FF8E20328606EE092 /* Pods-Pothole DetectorUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6139AD2A3B1702A32298B3F55914EA43 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				0049F4BA49D06E8F4C1A0DF192A1FB11 /* SideMenuManager.swift */,
+				A9DB323BB3B2B0A52D555C01DBCD0305 /* SideMenuTransition.swift */,
+				EA4F5E4E267C03BAC23C64C2DEC825B6 /* UISideMenuNavigationController.swift */,
+				38FF13F0BB1AB42B2F1C6A72A59BD82F /* UITableViewVibrantCell.swift */,
+				0588B462469020386FC4A4F5450A2C47 /* Support Files */,
+			);
+			name = SideMenu;
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		67D96C913516C3DFD6C13176E7EFE01D /* Pods-Pothole Detector */ = {
+			isa = PBXGroup;
+			children = (
+				4F982E41455E145B88799D573D68FF7C /* Info.plist */,
+				798CE631799B2FE636A3F85E3AA25C67 /* Pods-Pothole Detector.modulemap */,
+				2DA7C0E5132AC92750C14A1A5B73AC78 /* Pods-Pothole Detector-acknowledgements.markdown */,
+				5581B60EC8CB64346DADB3C84AFA4729 /* Pods-Pothole Detector-acknowledgements.plist */,
+				036827DADF7F54F3CF63AFD20AB0C593 /* Pods-Pothole Detector-dummy.m */,
+				155DCF4FAF6A287A11CBEF76D47EB5DA /* Pods-Pothole Detector-frameworks.sh */,
+				9980A35F618E647DC777C2E98C34D1EF /* Pods-Pothole Detector-resources.sh */,
+				53B2FAD2DA2F4AF65809AAC08FC609ED /* Pods-Pothole Detector-umbrella.h */,
+				69ABB1980F9A61A27758EC8C088A0360 /* Pods-Pothole Detector.debug.xcconfig */,
+				152BA01734CECA818B0D5F43D9691252 /* Pods-Pothole Detector.release.xcconfig */,
+			);
+			name = "Pods-Pothole Detector";
+			path = "Target Support Files/Pods-Pothole Detector";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				4C7DECB9505A3661801AB8D77F9249EF /* Pods */,
+				9F7B7C8F9D78E187867A8426950DA810 /* Products */,
+				59021C21CE6AF244655B4BC38F74133D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9F7B7C8F9D78E187867A8426950DA810 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D239924A6AA20DA836964507ACFF669 /* Pods_Pothole_Detector.framework */,
+				57015A0CBF213E7DBA4008AF507C4709 /* Pods_Pothole_DetectorTests.framework */,
+				166AA31FB2DCF7AD72720DEB041186DE /* Pods_Pothole_DetectorUITests.framework */,
+				7C22CF48C5D6E01BAB11D500FB7B68CF /* SideMenu.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DC1D2C86C7151B7FF8E20328606EE092 /* Pods-Pothole DetectorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				822AABC94440C43F06D54BFE99A5EDB8 /* Info.plist */,
+				8FCC7420B6C716CEB1E989C86203DCFE /* Pods-Pothole DetectorUITests.modulemap */,
+				0A17700933927FE59E0287EA2FFAF2C7 /* Pods-Pothole DetectorUITests-acknowledgements.markdown */,
+				DBD3A32746777EE8789A60E19ADAEC95 /* Pods-Pothole DetectorUITests-acknowledgements.plist */,
+				B665D0D199F7AADC9B521730C08799B7 /* Pods-Pothole DetectorUITests-dummy.m */,
+				BA03990E71807E9F9F9D6AEF2A4C59CE /* Pods-Pothole DetectorUITests-frameworks.sh */,
+				E79FA211A9935903B039319AF981739B /* Pods-Pothole DetectorUITests-resources.sh */,
+				53B333E4B3EE73BAE5A1010E6EB389EE /* Pods-Pothole DetectorUITests-umbrella.h */,
+				A5929BB0EF2B2E3D4DD1DE0050BEB68D /* Pods-Pothole DetectorUITests.debug.xcconfig */,
+				70C194D350C8AB0B1CE4D1C10A8BCCFB /* Pods-Pothole DetectorUITests.release.xcconfig */,
+			);
+			name = "Pods-Pothole DetectorUITests";
+			path = "Target Support Files/Pods-Pothole DetectorUITests";
+			sourceTree = "<group>";
+		};
+		F7365EFC962068A41E678F1499B57C40 /* Pods-Pothole DetectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				F16ADF0AD3E3FD5AF849CCDFE13E2738 /* Info.plist */,
+				75AC8354082F1ABE4886623F7401C61D /* Pods-Pothole DetectorTests.modulemap */,
+				73335CEEDFC01A9D6165227C1476B0D7 /* Pods-Pothole DetectorTests-acknowledgements.markdown */,
+				C60488DC26F72BE4A963C7A2528C52E6 /* Pods-Pothole DetectorTests-acknowledgements.plist */,
+				CAF54ABBF746A414A56488B8F964B430 /* Pods-Pothole DetectorTests-dummy.m */,
+				058148D08F28DBA1483A23199BCD6326 /* Pods-Pothole DetectorTests-frameworks.sh */,
+				570FCEDD502553573647FD8E79ED18C7 /* Pods-Pothole DetectorTests-resources.sh */,
+				415156D03394796D3FD1B587E48F86EB /* Pods-Pothole DetectorTests-umbrella.h */,
+				67B3368C6C7EB9AB132965189A7C3826 /* Pods-Pothole DetectorTests.debug.xcconfig */,
+				3F2EEB118BEF4D14F5D47C2148462D51 /* Pods-Pothole DetectorTests.release.xcconfig */,
+			);
+			name = "Pods-Pothole DetectorTests";
+			path = "Target Support Files/Pods-Pothole DetectorTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6C12223B941CBAF20AD5DE3CAD68DE3C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B039832C3EE2844EF181CBA93926B4 /* SideMenu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79F175FCF7DF2438FAC0ACB3EF7AE1DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26AD53DDE8B662EB604465831A88D43 /* Pods-Pothole DetectorTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8BB651E9CF421F847E105CBB2831736 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0286C1FBED69D667235A7DDA2AAD0EDC /* Pods-Pothole DetectorUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA1E2B56EC7B49EE063F576814CD2A67 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D094D4C6101939A28D6C9302A9575782 /* Pods-Pothole Detector-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4D271C450FA0EE8D4E82161FDA32AE5D /* Pods-Pothole DetectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BDC1071425826348640A2C7ADE1936B /* Build configuration list for PBXNativeTarget "Pods-Pothole DetectorTests" */;
+			buildPhases = (
+				EEFFBCBA99C51CAAFF85F48F4217B29B /* Sources */,
+				C0A290243E1FCB15867610CD6BE3FFD0 /* Frameworks */,
+				79F175FCF7DF2438FAC0ACB3EF7AE1DC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Pothole DetectorTests";
+			productName = "Pods-Pothole DetectorTests";
+			productReference = 57015A0CBF213E7DBA4008AF507C4709 /* Pods_Pothole_DetectorTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		644CFCA77B4DE769D7C7FE54BD0D2DE1 /* Pods-Pothole DetectorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5278A1D6E1EEFBF062248ED668502036 /* Build configuration list for PBXNativeTarget "Pods-Pothole DetectorUITests" */;
+			buildPhases = (
+				4839E4C9B47D5D27DC6D358F5B03D69E /* Sources */,
+				1E13118B36F413F20E977A5C8A7A7150 /* Frameworks */,
+				E8BB651E9CF421F847E105CBB2831736 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Pothole DetectorUITests";
+			productName = "Pods-Pothole DetectorUITests";
+			productReference = 166AA31FB2DCF7AD72720DEB041186DE /* Pods_Pothole_DetectorUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B1B19660572568F38B937B44F319DDB4 /* SideMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 317107F1D5B3C318768AF14D18F95617 /* Build configuration list for PBXNativeTarget "SideMenu" */;
+			buildPhases = (
+				7527F76A2B954EF1B2D0559931E3C9C5 /* Sources */,
+				C74704CCAD852026D1752E1647E8B991 /* Frameworks */,
+				6C12223B941CBAF20AD5DE3CAD68DE3C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SideMenu;
+			productName = SideMenu;
+			productReference = 7C22CF48C5D6E01BAB11D500FB7B68CF /* SideMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D26F48377FA071BA16D6CDEDAAB756DC /* Pods-Pothole Detector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EADC47A817819043173A8FDA84043A3A /* Build configuration list for PBXNativeTarget "Pods-Pothole Detector" */;
+			buildPhases = (
+				5FC02003FF98E70124E2960C8BC270DB /* Sources */,
+				9EC08667AF8C8673A51BA57F97FDA7EC /* Frameworks */,
+				EA1E2B56EC7B49EE063F576814CD2A67 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7F238BE904A8BABC9225C6C726491A3 /* PBXTargetDependency */,
+			);
+			name = "Pods-Pothole Detector";
+			productName = "Pods-Pothole Detector";
+			productReference = 3D239924A6AA20DA836964507ACFF669 /* Pods_Pothole_Detector.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9F7B7C8F9D78E187867A8426950DA810 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D26F48377FA071BA16D6CDEDAAB756DC /* Pods-Pothole Detector */,
+				4D271C450FA0EE8D4E82161FDA32AE5D /* Pods-Pothole DetectorTests */,
+				644CFCA77B4DE769D7C7FE54BD0D2DE1 /* Pods-Pothole DetectorUITests */,
+				B1B19660572568F38B937B44F319DDB4 /* SideMenu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4839E4C9B47D5D27DC6D358F5B03D69E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF48592C7ED149DA18B1FDC0E2128E1 /* Pods-Pothole DetectorUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC02003FF98E70124E2960C8BC270DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7374F5525994EFCF0895F6E8414108A5 /* Pods-Pothole Detector-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7527F76A2B954EF1B2D0559931E3C9C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA87D611488DCD70366550844FEB236F /* SideMenu-dummy.m in Sources */,
+				C1271B6A7B8CA07E8603632BEC453997 /* SideMenuManager.swift in Sources */,
+				EFF60502DC52B37088A61E8925831851 /* SideMenuTransition.swift in Sources */,
+				C10652595E91FD96576E358E24C73334 /* UISideMenuNavigationController.swift in Sources */,
+				E0BE5002DC17D6D9FB0FDC3486DB5498 /* UITableViewVibrantCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEFFBCBA99C51CAAFF85F48F4217B29B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47B13F2FA41D130A4EE0490410AE5B28 /* Pods-Pothole DetectorTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7F238BE904A8BABC9225C6C726491A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SideMenu;
+			target = B1B19660572568F38B937B44F319DDB4 /* SideMenu */;
+			targetProxy = B5A21EBF70F62130E224EF0935EE930F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		21F56D056705CE098739957779E98612 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70C194D350C8AB0B1CE4D1C10A8BCCFB /* Pods-Pothole DetectorUITests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pothole DetectorUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pothole DetectorUITests/Pods-Pothole DetectorUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Pothole_DetectorUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		287BADF5F9BE11150201E7F3D3E7D82F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A324E319F34D41C7D0ED3E277A50CD /* SideMenu.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
+				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B6FA96FAA611A62279C49F6E01C059F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3691EFF605EB29787F8A46C5B6BE1D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7313BEA7A17B948529D40724CBE474C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67B3368C6C7EB9AB132965189A7C3826 /* Pods-Pothole DetectorTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pothole DetectorTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pothole DetectorTests/Pods-Pothole DetectorTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Pothole_DetectorTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84108400EC89B41CEDC5963F05DC001C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5929BB0EF2B2E3D4DD1DE0050BEB68D /* Pods-Pothole DetectorUITests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pothole DetectorUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pothole DetectorUITests/Pods-Pothole DetectorUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Pothole_DetectorUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CFDD06EAE6015A78C1F77CCE0A3558BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 152BA01734CECA818B0D5F43D9691252 /* Pods-Pothole Detector.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pothole Detector/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pothole Detector/Pods-Pothole Detector.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Pothole_Detector;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D946E19FEE2D7AAB779E2D175EA6CC5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F2EEB118BEF4D14F5D47C2148462D51 /* Pods-Pothole DetectorTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pothole DetectorTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pothole DetectorTests/Pods-Pothole DetectorTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Pothole_DetectorTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D948A2FB68C897589B621ADBFF1A0D73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69ABB1980F9A61A27758EC8C088A0360 /* Pods-Pothole Detector.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pothole Detector/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pothole Detector/Pods-Pothole Detector.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Pothole_Detector;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FEDF194733266B3BBEF269C0FEEC6A08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A324E319F34D41C7D0ED3E277A50CD /* SideMenu.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
+				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B6FA96FAA611A62279C49F6E01C059F /* Debug */,
+				3691EFF605EB29787F8A46C5B6BE1D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		317107F1D5B3C318768AF14D18F95617 /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				287BADF5F9BE11150201E7F3D3E7D82F /* Debug */,
+				FEDF194733266B3BBEF269C0FEEC6A08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5278A1D6E1EEFBF062248ED668502036 /* Build configuration list for PBXNativeTarget "Pods-Pothole DetectorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84108400EC89B41CEDC5963F05DC001C /* Debug */,
+				21F56D056705CE098739957779E98612 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BDC1071425826348640A2C7ADE1936B /* Build configuration list for PBXNativeTarget "Pods-Pothole DetectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7313BEA7A17B948529D40724CBE474C9 /* Debug */,
+				D946E19FEE2D7AAB779E2D175EA6CC5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EADC47A817819043173A8FDA84043A3A /* Build configuration list for PBXNativeTarget "Pods-Pothole Detector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D948A2FB68C897589B621ADBFF1A0D73 /* Debug */,
+				CFDD06EAE6015A78C1F77CCE0A3558BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
