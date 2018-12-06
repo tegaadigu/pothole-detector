@@ -10,8 +10,14 @@
 		200D37BB27200E3C148B34CB /* Pods_Pothole_DetectorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9C1ADBF51641A450E27B36 /* Pods_Pothole_DetectorUITests.framework */; };
 		792CFFD1478DDAB1F5D6DA04 /* Pods_Pothole_Detector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D20AD075DE9535542E54354 /* Pods_Pothole_Detector.framework */; };
 		8B49C25B21B740C200293EBC /* PotholeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B49C25A21B740C100293EBC /* PotholeModel.swift */; };
+		8B52402F21B88AE300BE8559 /* detectedPothole.amr in Resources */ = {isa = PBXBuildFile; fileRef = 8B52402E21B88AC600BE8559 /* detectedPothole.amr */; };
+		8B52403121B89E3600BE8559 /* detectedPothole.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8B52403021B89E3600BE8559 /* detectedPothole.mp3 */; };
+		8B52403521B8C75400BE8559 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B52403421B8C75300BE8559 /* BaseViewController.swift */; };
+		8B52403D21B8C90C00BE8559 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B52403C21B8C90C00BE8559 /* MenuViewController.swift */; };
+		8B52404321B8F30700BE8559 /* NeighborhoodScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B52404221B8F30700BE8559 /* NeighborhoodScoreViewController.swift */; };
+		8B52404521B8F60D00BE8559 /* NeighborhoodScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B52404421B8F60D00BE8559 /* NeighborhoodScoreTableViewCell.swift */; };
 		8BF873B021B306840041CCF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF873AF21B306840041CCF1 /* AppDelegate.swift */; };
-		8BF873B221B306840041CCF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF873B121B306840041CCF1 /* ViewController.swift */; };
+		8BF873B221B306840041CCF1 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF873B121B306840041CCF1 /* DashboardViewController.swift */; };
 		8BF873B521B306840041CCF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF873B321B306840041CCF1 /* Main.storyboard */; };
 		8BF873B721B306880041CCF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF873B621B306880041CCF1 /* Assets.xcassets */; };
 		8BF873BA21B306880041CCF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF873B821B306880041CCF1 /* LaunchScreen.storyboard */; };
@@ -45,9 +51,15 @@
 		5D20AD075DE9535542E54354 /* Pods_Pothole_Detector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pothole_Detector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F8B135ACF7FDB375434C87 /* Pods-Pothole DetectorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pothole DetectorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pothole DetectorUITests/Pods-Pothole DetectorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8B49C25A21B740C100293EBC /* PotholeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotholeModel.swift; sourceTree = "<group>"; };
+		8B52402E21B88AC600BE8559 /* detectedPothole.amr */ = {isa = PBXFileReference; lastKnownFileType = file; path = detectedPothole.amr; sourceTree = "<group>"; };
+		8B52403021B89E3600BE8559 /* detectedPothole.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = detectedPothole.mp3; sourceTree = "<group>"; };
+		8B52403421B8C75300BE8559 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = "../../../Downloads/AKSwiftSlideMenu-master/AKSwiftSlideMenu/BaseViewController.swift"; sourceTree = "<group>"; };
+		8B52403C21B8C90C00BE8559 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		8B52404221B8F30700BE8559 /* NeighborhoodScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborhoodScoreViewController.swift; sourceTree = "<group>"; };
+		8B52404421B8F60D00BE8559 /* NeighborhoodScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborhoodScoreTableViewCell.swift; sourceTree = "<group>"; };
 		8BF873AC21B306840041CCF1 /* Pothole Detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pothole Detector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF873AF21B306840041CCF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8BF873B121B306840041CCF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BF873B121B306840041CCF1 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		8BF873B421B306840041CCF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BF873B621B306880041CCF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BF873B921B306880041CCF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,6 +116,8 @@
 		8BF873A321B306840041CCF1 = {
 			isa = PBXGroup;
 			children = (
+				8B52403021B89E3600BE8559 /* detectedPothole.mp3 */,
+				8B52402E21B88AC600BE8559 /* detectedPothole.amr */,
 				8BF873AE21B306840041CCF1 /* Pothole Detector */,
 				8BF873C321B306880041CCF1 /* Pothole DetectorTests */,
 				8BF873CE21B306880041CCF1 /* Pothole DetectorUITests */,
@@ -126,13 +140,17 @@
 		8BF873AE21B306840041CCF1 /* Pothole Detector */ = {
 			isa = PBXGroup;
 			children = (
+				8B52404221B8F30700BE8559 /* NeighborhoodScoreViewController.swift */,
+				8B52403421B8C75300BE8559 /* BaseViewController.swift */,
 				8BF873AF21B306840041CCF1 /* AppDelegate.swift */,
-				8BF873B121B306840041CCF1 /* ViewController.swift */,
+				8BF873B121B306840041CCF1 /* DashboardViewController.swift */,
 				8BF873B321B306840041CCF1 /* Main.storyboard */,
+				8B52404421B8F60D00BE8559 /* NeighborhoodScoreTableViewCell.swift */,
 				8BF873B621B306880041CCF1 /* Assets.xcassets */,
 				8BF873B821B306880041CCF1 /* LaunchScreen.storyboard */,
 				8BF873BB21B306880041CCF1 /* Info.plist */,
 				8B49C25A21B740C100293EBC /* PotholeModel.swift */,
+				8B52403C21B8C90C00BE8559 /* MenuViewController.swift */,
 			);
 			path = "Pothole Detector";
 			sourceTree = "<group>";
@@ -281,8 +299,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B52402F21B88AE300BE8559 /* detectedPothole.amr in Resources */,
 				8BF873BA21B306880041CCF1 /* LaunchScreen.storyboard in Resources */,
 				8BF873B721B306880041CCF1 /* Assets.xcassets in Resources */,
+				8B52403121B89E3600BE8559 /* detectedPothole.mp3 in Resources */,
 				8BF873B521B306840041CCF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,7 +479,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B49C25B21B740C200293EBC /* PotholeModel.swift in Sources */,
-				8BF873B221B306840041CCF1 /* ViewController.swift in Sources */,
+				8B52403521B8C75400BE8559 /* BaseViewController.swift in Sources */,
+				8BF873B221B306840041CCF1 /* DashboardViewController.swift in Sources */,
+				8B52404321B8F30700BE8559 /* NeighborhoodScoreViewController.swift in Sources */,
+				8B52403D21B8C90C00BE8559 /* MenuViewController.swift in Sources */,
+				8B52404521B8F60D00BE8559 /* NeighborhoodScoreTableViewCell.swift in Sources */,
 				8BF873B021B306840041CCF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

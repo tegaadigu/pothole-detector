@@ -8,10 +8,24 @@
 
 import Foundation
 
+//Struct to hold pothole from api response....
 struct PotholeModel: Decodable {
     let lat: Double
     let lon: Double
     let user_id: Int
-    let created_on: String
+    let created_on: String?
     let id: Int
+}
+
+//Struct for dataModel to store pot-hle
+struct PostPothole: Codable {
+    let lat: Double
+    let lon: Double
+    let user_id: Int
+    let created_on: String
+}
+
+struct PotHoleRanking: Decodable {
+    let neighborhood: String
+    let potholeCount: Int
 }
