@@ -16,6 +16,11 @@
 		8B52403D21B8C90C00BE8559 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B52403C21B8C90C00BE8559 /* MenuViewController.swift */; };
 		8B52404321B8F30700BE8559 /* NeighborhoodScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B52404221B8F30700BE8559 /* NeighborhoodScoreViewController.swift */; };
 		8B52404521B8F60D00BE8559 /* NeighborhoodScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B52404421B8F60D00BE8559 /* NeighborhoodScoreTableViewCell.swift */; };
+		8B9AC88D21BDB895000D49FE /* SpeechTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AC88C21BDB895000D49FE /* SpeechTranslator.swift */; };
+		8B9AC88F21BDE6F8000D49FE /* NeighborhoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AC88E21BDE6F8000D49FE /* NeighborhoodDetailViewController.swift */; };
+		8B9AC89121BDF943000D49FE /* RankingUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AC89021BDF943000D49FE /* RankingUserTableViewCell.swift */; };
+		8B9AC89321BE0B80000D49FE /* UserListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AC89221BE0B80000D49FE /* UserListModel.swift */; };
+		8B9AC89521BE0BA7000D49FE /* PotHoleRankingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AC89421BE0BA7000D49FE /* PotHoleRankingModel.swift */; };
 		8BF873B021B306840041CCF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF873AF21B306840041CCF1 /* AppDelegate.swift */; };
 		8BF873B221B306840041CCF1 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF873B121B306840041CCF1 /* DashboardViewController.swift */; };
 		8BF873B521B306840041CCF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF873B321B306840041CCF1 /* Main.storyboard */; };
@@ -57,6 +62,11 @@
 		8B52403C21B8C90C00BE8559 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		8B52404221B8F30700BE8559 /* NeighborhoodScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborhoodScoreViewController.swift; sourceTree = "<group>"; };
 		8B52404421B8F60D00BE8559 /* NeighborhoodScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborhoodScoreTableViewCell.swift; sourceTree = "<group>"; };
+		8B9AC88C21BDB895000D49FE /* SpeechTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTranslator.swift; sourceTree = "<group>"; };
+		8B9AC88E21BDE6F8000D49FE /* NeighborhoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborhoodDetailViewController.swift; sourceTree = "<group>"; };
+		8B9AC89021BDF943000D49FE /* RankingUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingUserTableViewCell.swift; sourceTree = "<group>"; };
+		8B9AC89221BE0B80000D49FE /* UserListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListModel.swift; sourceTree = "<group>"; };
+		8B9AC89421BE0BA7000D49FE /* PotHoleRankingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotHoleRankingModel.swift; sourceTree = "<group>"; };
 		8BF873AC21B306840041CCF1 /* Pothole Detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pothole Detector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF873AF21B306840041CCF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BF873B121B306840041CCF1 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +161,11 @@
 				8BF873BB21B306880041CCF1 /* Info.plist */,
 				8B49C25A21B740C100293EBC /* PotholeModel.swift */,
 				8B52403C21B8C90C00BE8559 /* MenuViewController.swift */,
+				8B9AC88C21BDB895000D49FE /* SpeechTranslator.swift */,
+				8B9AC88E21BDE6F8000D49FE /* NeighborhoodDetailViewController.swift */,
+				8B9AC89021BDF943000D49FE /* RankingUserTableViewCell.swift */,
+				8B9AC89221BE0B80000D49FE /* UserListModel.swift */,
+				8B9AC89421BE0BA7000D49FE /* PotHoleRankingModel.swift */,
 			);
 			path = "Pothole Detector";
 			sourceTree = "<group>";
@@ -480,9 +495,14 @@
 			files = (
 				8B49C25B21B740C200293EBC /* PotholeModel.swift in Sources */,
 				8B52403521B8C75400BE8559 /* BaseViewController.swift in Sources */,
+				8B9AC89521BE0BA7000D49FE /* PotHoleRankingModel.swift in Sources */,
+				8B9AC89321BE0B80000D49FE /* UserListModel.swift in Sources */,
 				8BF873B221B306840041CCF1 /* DashboardViewController.swift in Sources */,
+				8B9AC88D21BDB895000D49FE /* SpeechTranslator.swift in Sources */,
 				8B52404321B8F30700BE8559 /* NeighborhoodScoreViewController.swift in Sources */,
+				8B9AC88F21BDE6F8000D49FE /* NeighborhoodDetailViewController.swift in Sources */,
 				8B52403D21B8C90C00BE8559 /* MenuViewController.swift in Sources */,
+				8B9AC89121BDF943000D49FE /* RankingUserTableViewCell.swift in Sources */,
 				8B52404521B8F60D00BE8559 /* NeighborhoodScoreTableViewCell.swift in Sources */,
 				8BF873B021B306840041CCF1 /* AppDelegate.swift in Sources */,
 			);

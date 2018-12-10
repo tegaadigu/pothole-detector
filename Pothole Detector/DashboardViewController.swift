@@ -23,6 +23,9 @@ class DashboardViewController: BaseViewController, CLLocationManagerDelegate, SF
     // MARK: Properties
     @IBOutlet weak var stopBtn: UIButton!
     
+    // Declare Alert message
+    let dialogMessage = UIAlertController(title: "", message: "", preferredStyle: .alert)
+    
     // Audio Profiles
     var audioPlayer: AVAudioPlayer?
     
@@ -36,16 +39,6 @@ class DashboardViewController: BaseViewController, CLLocationManagerDelegate, SF
     let speechRecognizer: SFSpeechRecognizer? = SFSpeechRecognizer()
     let recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
     var recognitionTask: SFSpeechRecognitionTask?
-    
-    // Accelerometer Data
-    @IBOutlet weak var aLabelX: UILabel!
-    @IBOutlet weak var aLabelY: UILabel!
-    @IBOutlet weak var aLabelZ: UILabel!
-    
-    // Gyroscope Reading
-    @IBOutlet weak var gLabelX: UILabel!
-    @IBOutlet weak var gLabelY: UILabel!
-    @IBOutlet weak var gLabelZ: UILabel!
     
     @IBOutlet weak var activityLabel: UILabel!
     override func viewDidLoad() {
@@ -88,7 +81,6 @@ class DashboardViewController: BaseViewController, CLLocationManagerDelegate, SF
         
         activityManager.startActivityUpdates(to: OperationQueue.main, withHandler: {(activity: CMMotionActivity!) -> Void in
             if(activity.walking == true) {
-//                self.activityLabel.text = "walking"
                 //Start tracking accelerometer data.
                 if(!self.stop) {
                     self.startAccelerometers()
@@ -102,8 +94,6 @@ class DashboardViewController: BaseViewController, CLLocationManagerDelegate, SF
 //                self.activityLabel.text = "driving";
             }
         })
-        
-//        self.startAccelerometers()
     }
     
     
@@ -142,15 +132,16 @@ class DashboardViewController: BaseViewController, CLLocationManagerDelegate, SF
                 print("Playing audio")
                 audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: fileURL))
                 audioPlayer?.play();
+                DispatchQueue.main.async {
+                    self.audioPlayer?.stop()
+                    self.recordAndRecognizeSpeech()
+                }
             } else {
                 print("No file with specified name exists")
             }
         } catch let error {
             print("Can't play the audio file failed with an error \(error.localizedDescription)")
         }
-        //activate speech recognition
-        // Declare Alert message
-        let dialogMessage = UIAlertController(title: "Pothole Detected!", message: "Save Pothole?", preferredStyle: .alert)
         
         // Create OK button with action handler
         let ok = UIAlertAction(title: "Yes", style: .default, handler: { (action) -> Void in
@@ -162,6 +153,8 @@ class DashboardViewController: BaseViewController, CLLocationManagerDelegate, SF
             self.stop = false;
             self.locationManager.startUpdatingLocation();
         }
+        dialogMessage.title = "Pothole Detected!"
+        dialogMessage.message = "Save Pothole?"
         
         //Add OK and Cancel button to dialog message
         dialogMessage.addAction(ok)
@@ -209,7 +202,6 @@ class DashboardViewController: BaseViewController, CLLocationManagerDelegate, SF
 
     //MARK: CLLocationManager Delegates
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-//        print(locations);
         let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: locations[0].coordinate.latitude, longitude: locations[0].coordinate.longitude), span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
         
         self.lastLocation = locations[0];
@@ -223,6 +215,7 @@ class DashboardViewController: BaseViewController, CLLocationManagerDelegate, SF
     //MARK: Speech Recognition function
     
     func recordAndRecognizeSpeech() {
+        audioEngine.inputNode.removeTap(onBus: 0)
         let node = audioEngine.inputNode
         let recordingFormat = node.outputFormat(forBus: 0)
         node.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer: AVAudioPCMBuffer, when: AVAudioTime) in
@@ -265,8 +258,18 @@ class DashboardViewController: BaseViewController, CLLocationManagerDelegate, SF
         
     }
     
+    //MARK: Listening to speech command.
     func checkForSaidCommand(resultString: String) {
+        let result = resultString.lowercased()
+        if(SpeechTranslator.isYes(text: result)) {
+            self.dialogMessage.dismiss(animated: true, completion: nil)
+            storePothole();
+        }else {
+            self.stop = false;
+            self.locationManager.startUpdatingLocation();
+        }
         print("result: " + resultString)
+        self.audioEngine.stop()
     }
     
     //MARK: Storing Pothole to api endpoint
@@ -295,6 +298,21 @@ class DashboardViewController: BaseViewController, CLLocationManagerDelegate, SF
             // ... and set our request's HTTP body
             request.httpBody = jsonData
             print("jsonData: ", String(data: request.httpBody!, encoding: .utf8) ?? "no body data")
+            //activate speech recognition
+            // Declare Alert message
+            let dialogMessage = UIAlertController(title: "Pothole Saved!", message: "new pothole stored.", preferredStyle: .alert)
+            
+            // Create OK button with action handler
+            let ok = UIAlertAction(title: "Ok", style: .default, handler: { (action) -> Void in
+                self.stop = false;
+                self.locationManager.startUpdatingLocation();
+            })
+            
+            //Add OK and Cancel button to dialog message
+            dialogMessage.addAction(ok)
+            
+            // Present dialog message to user
+            self.present(dialogMessage, animated: true, completion: nil)
         } catch {
             print("Couldnt encode to json")
         }

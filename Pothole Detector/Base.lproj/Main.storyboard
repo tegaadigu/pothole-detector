@@ -174,7 +174,6 @@
         <!--Neighborhood Ranking-->
         <scene sceneID="beV-mN-xMN">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o9B-sM-M7U" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="NeighborhoodScoreViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YaM-Ea-AMK" customClass="NeighborhoodScoreViewController" customModule="Pothole_Detector" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aBo-tM-dct">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -228,8 +227,91 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Neighborhood Ranking" id="0HE-xM-OxV"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o9B-sM-M7U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2500" y="-454.72263868065971"/>
+        </scene>
+        <!--Pothole Detail Page-->
+        <scene sceneID="5hV-Ak-4gU">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IRS-sz-zRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="NeighborhoodDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f4Q-aJ-Pu0" customClass="NeighborhoodDetailViewController" customModule="Pothole_Detector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k81-E5-5hd" customClass="NeighborhoodScoreTableViewCell" customModule="Pothole_Detector" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p8V-Ah-MWN">
+                                <rect key="frame" x="0.0" y="478" width="375" height="189"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="189" id="1Vp-vv-iA1"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RankingUserTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RankingUserTableViewCell" rowHeight="110" id="Lmm-2k-CZB" customClass="RankingUserTableViewCell" customModule="Pothole_Detector" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lmm-2k-CZB" id="2Fj-Ec-J0o">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="109.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pky-nN-rB0">
+                                                    <rect key="frame" x="15" y="11" width="345" height="57"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIR-Rp-auj">
+                                                    <rect key="frame" x="15" y="67" width="345" height="32"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bIR-Rp-auj" firstAttribute="bottom" secondItem="2Fj-Ec-J0o" secondAttribute="bottomMargin" id="9bq-JP-ZZn"/>
+                                                <constraint firstItem="bIR-Rp-auj" firstAttribute="trailing" secondItem="2Fj-Ec-J0o" secondAttribute="trailingMargin" id="BTv-S5-yje"/>
+                                                <constraint firstItem="Pky-nN-rB0" firstAttribute="top" secondItem="2Fj-Ec-J0o" secondAttribute="topMargin" id="Bxv-Bh-BiD"/>
+                                                <constraint firstItem="Pky-nN-rB0" firstAttribute="leading" secondItem="2Fj-Ec-J0o" secondAttribute="leadingMargin" id="INr-l2-skN"/>
+                                                <constraint firstItem="Pky-nN-rB0" firstAttribute="trailing" secondItem="2Fj-Ec-J0o" secondAttribute="trailingMargin" id="NKE-AY-Jyu"/>
+                                                <constraint firstItem="bIR-Rp-auj" firstAttribute="top" secondItem="2Fj-Ec-J0o" secondAttribute="topMargin" constant="56" id="P5M-fL-lLc"/>
+                                                <constraint firstItem="bIR-Rp-auj" firstAttribute="leading" secondItem="2Fj-Ec-J0o" secondAttribute="leadingMargin" id="PVS-pp-qNV"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Pky-nN-rB0" secondAttribute="bottom" constant="31" id="TTm-3K-cWE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="potholeCountLabel" destination="bIR-Rp-auj" id="VwQ-n1-v2A"/>
+                                            <outlet property="userNameLabel" destination="Pky-nN-rB0" id="ILm-oO-MsV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="f4Q-aJ-Pu0" id="eS2-Pu-2Y2"/>
+                                    <outlet property="delegate" destination="f4Q-aJ-Pu0" id="mbB-Ty-VAE"/>
+                                </connections>
+                            </tableView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="J20-05-w2a">
+                                <rect key="frame" x="0.0" y="64" width="375" height="406"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J20-05-w2a" firstAttribute="trailing" secondItem="NAZ-4A-MOe" secondAttribute="trailing" id="GQ5-EM-krS"/>
+                            <constraint firstItem="J20-05-w2a" firstAttribute="leading" secondItem="NAZ-4A-MOe" secondAttribute="leading" id="Gv7-Wx-2p0"/>
+                            <constraint firstItem="J20-05-w2a" firstAttribute="top" secondItem="NAZ-4A-MOe" secondAttribute="top" id="YrA-t3-AkT"/>
+                            <constraint firstItem="p8V-Ah-MWN" firstAttribute="leading" secondItem="NAZ-4A-MOe" secondAttribute="leading" id="als-em-gIe"/>
+                            <constraint firstItem="p8V-Ah-MWN" firstAttribute="top" secondItem="J20-05-w2a" secondAttribute="bottom" constant="8" id="eD0-1j-nhh"/>
+                            <constraint firstItem="p8V-Ah-MWN" firstAttribute="bottom" secondItem="NAZ-4A-MOe" secondAttribute="bottom" id="eK3-kU-iFs"/>
+                            <constraint firstItem="p8V-Ah-MWN" firstAttribute="trailing" secondItem="NAZ-4A-MOe" secondAttribute="trailing" id="pIT-5Y-5ZU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NAZ-4A-MOe"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pothole Detail Page" id="VrE-Jp-7Wt"/>
+                    <connections>
+                        <outlet property="mapView" destination="J20-05-w2a" id="LUc-73-rkN"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="4428" y="-479.01049475262374"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SCi-8K-4bg">
@@ -248,6 +330,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2fP-YF-v6m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1560.8" y="-454.72263868065971"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dqd-LI-8JI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gmb-qL-rVe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="r3V-u6-NKR">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="f4Q-aJ-Pu0" kind="relationship" relationship="rootViewController" id="Zuw-PR-cBu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rYE-0h-79k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3488.8000000000002" y="-479.01049475262374"/>
         </scene>
     </scenes>
 </document>

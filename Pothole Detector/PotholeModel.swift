@@ -25,7 +25,4 @@ struct PostPothole: Codable {
     let created_on: String
 }
 
-struct PotHoleRanking: Decodable {
-    let neighborhood: String
-    let potholeCount: Int
-}
+
