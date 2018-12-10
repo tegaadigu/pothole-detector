@@ -7,13 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200D37BB27200E3C148B34CB /* Pods_Pothole_DetectorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9C1ADBF51641A450E27B36 /* Pods_Pothole_DetectorUITests.framework */; };
+		792CFFD1478DDAB1F5D6DA04 /* Pods_Pothole_Detector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D20AD075DE9535542E54354 /* Pods_Pothole_Detector.framework */; };
+		8B49C25B21B740C200293EBC /* PotholeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B49C25A21B740C100293EBC /* PotholeModel.swift */; };
+		8B52402F21B88AE300BE8559 /* detectedPothole.amr in Resources */ = {isa = PBXBuildFile; fileRef = 8B52402E21B88AC600BE8559 /* detectedPothole.amr */; };
+		8B52403121B89E3600BE8559 /* detectedPothole.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8B52403021B89E3600BE8559 /* detectedPothole.mp3 */; };
+		8B52403521B8C75400BE8559 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B52403421B8C75300BE8559 /* BaseViewController.swift */; };
+		8B52403D21B8C90C00BE8559 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B52403C21B8C90C00BE8559 /* MenuViewController.swift */; };
+		8B52404321B8F30700BE8559 /* NeighborhoodScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B52404221B8F30700BE8559 /* NeighborhoodScoreViewController.swift */; };
+		8B52404521B8F60D00BE8559 /* NeighborhoodScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B52404421B8F60D00BE8559 /* NeighborhoodScoreTableViewCell.swift */; };
+		8B9AC88D21BDB895000D49FE /* SpeechTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AC88C21BDB895000D49FE /* SpeechTranslator.swift */; };
+		8B9AC88F21BDE6F8000D49FE /* NeighborhoodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AC88E21BDE6F8000D49FE /* NeighborhoodDetailViewController.swift */; };
+		8B9AC89121BDF943000D49FE /* RankingUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AC89021BDF943000D49FE /* RankingUserTableViewCell.swift */; };
+		8B9AC89321BE0B80000D49FE /* UserListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AC89221BE0B80000D49FE /* UserListModel.swift */; };
+		8B9AC89521BE0BA7000D49FE /* PotHoleRankingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AC89421BE0BA7000D49FE /* PotHoleRankingModel.swift */; };
+		8B9AC89721BEE5C0000D49FE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AC89621BEE5C0000D49FE /* LoginViewController.swift */; };
+		8B9AC89921BEF561000D49FE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AC89821BEF561000D49FE /* UserModel.swift */; };
 		8BF873B021B306840041CCF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF873AF21B306840041CCF1 /* AppDelegate.swift */; };
-		8BF873B221B306840041CCF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF873B121B306840041CCF1 /* ViewController.swift */; };
+		8BF873B221B306840041CCF1 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF873B121B306840041CCF1 /* DashboardViewController.swift */; };
 		8BF873B521B306840041CCF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF873B321B306840041CCF1 /* Main.storyboard */; };
 		8BF873B721B306880041CCF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF873B621B306880041CCF1 /* Assets.xcassets */; };
 		8BF873BA21B306880041CCF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF873B821B306880041CCF1 /* LaunchScreen.storyboard */; };
 		8BF873C521B306880041CCF1 /* Pothole_DetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF873C421B306880041CCF1 /* Pothole_DetectorTests.swift */; };
 		8BF873D021B306880041CCF1 /* Pothole_DetectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF873CF21B306880041CCF1 /* Pothole_DetectorUITests.swift */; };
+		B19D5B4D32781808CED4739F /* Pods_Pothole_DetectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366058C499C9F4C5756E90B2 /* Pods_Pothole_DetectorTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +51,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		019102B5942722E4D6F90888 /* Pods-Pothole DetectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pothole DetectorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pothole DetectorTests/Pods-Pothole DetectorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		083E09CCAD70ECDC5C1C80AF /* Pods-Pothole DetectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pothole DetectorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pothole DetectorTests/Pods-Pothole DetectorTests.release.xcconfig"; sourceTree = "<group>"; };
+		176FC030822C8922E54BB48B /* Pods-Pothole Detector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pothole Detector.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pothole Detector/Pods-Pothole Detector.release.xcconfig"; sourceTree = "<group>"; };
+		366058C499C9F4C5756E90B2 /* Pods_Pothole_DetectorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pothole_DetectorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D20AD075DE9535542E54354 /* Pods_Pothole_Detector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pothole_Detector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F8B135ACF7FDB375434C87 /* Pods-Pothole DetectorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pothole DetectorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pothole DetectorUITests/Pods-Pothole DetectorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8B49C25A21B740C100293EBC /* PotholeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotholeModel.swift; sourceTree = "<group>"; };
+		8B52402E21B88AC600BE8559 /* detectedPothole.amr */ = {isa = PBXFileReference; lastKnownFileType = file; path = detectedPothole.amr; sourceTree = "<group>"; };
+		8B52403021B89E3600BE8559 /* detectedPothole.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = detectedPothole.mp3; sourceTree = "<group>"; };
+		8B52403421B8C75300BE8559 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = "../../../Downloads/AKSwiftSlideMenu-master/AKSwiftSlideMenu/BaseViewController.swift"; sourceTree = "<group>"; };
+		8B52403C21B8C90C00BE8559 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		8B52404221B8F30700BE8559 /* NeighborhoodScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborhoodScoreViewController.swift; sourceTree = "<group>"; };
+		8B52404421B8F60D00BE8559 /* NeighborhoodScoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborhoodScoreTableViewCell.swift; sourceTree = "<group>"; };
+		8B9AC88C21BDB895000D49FE /* SpeechTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTranslator.swift; sourceTree = "<group>"; };
+		8B9AC88E21BDE6F8000D49FE /* NeighborhoodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeighborhoodDetailViewController.swift; sourceTree = "<group>"; };
+		8B9AC89021BDF943000D49FE /* RankingUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingUserTableViewCell.swift; sourceTree = "<group>"; };
+		8B9AC89221BE0B80000D49FE /* UserListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListModel.swift; sourceTree = "<group>"; };
+		8B9AC89421BE0BA7000D49FE /* PotHoleRankingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotHoleRankingModel.swift; sourceTree = "<group>"; };
+		8B9AC89621BEE5C0000D49FE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8B9AC89821BEF561000D49FE /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		8BF873AC21B306840041CCF1 /* Pothole Detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pothole Detector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF873AF21B306840041CCF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8BF873B121B306840041CCF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BF873B121B306840041CCF1 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		8BF873B421B306840041CCF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BF873B621B306880041CCF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BF873B921B306880041CCF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +84,9 @@
 		8BF873CB21B306880041CCF1 /* Pothole DetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pothole DetectorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF873CF21B306880041CCF1 /* Pothole_DetectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pothole_DetectorUITests.swift; sourceTree = "<group>"; };
 		8BF873D121B306880041CCF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADAA9167BF58ACF2ED925715 /* Pods-Pothole Detector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pothole Detector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pothole Detector/Pods-Pothole Detector.debug.xcconfig"; sourceTree = "<group>"; };
+		BA9C1ADBF51641A450E27B36 /* Pods_Pothole_DetectorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pothole_DetectorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA483120B5575EB4AE8D4761 /* Pods-Pothole DetectorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pothole DetectorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pothole DetectorUITests/Pods-Pothole DetectorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				792CFFD1478DDAB1F5D6DA04 /* Pods_Pothole_Detector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B19D5B4D32781808CED4739F /* Pods_Pothole_DetectorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +110,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				200D37BB27200E3C148B34CB /* Pods_Pothole_DetectorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F7109A581064B5E7CE46117 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D20AD075DE9535542E54354 /* Pods_Pothole_Detector.framework */,
+				366058C499C9F4C5756E90B2 /* Pods_Pothole_DetectorTests.framework */,
+				BA9C1ADBF51641A450E27B36 /* Pods_Pothole_DetectorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8BF873A321B306840041CCF1 = {
 			isa = PBXGroup;
 			children = (
+				8B52403021B89E3600BE8559 /* detectedPothole.mp3 */,
+				8B52402E21B88AC600BE8559 /* detectedPothole.amr */,
 				8BF873AE21B306840041CCF1 /* Pothole Detector */,
 				8BF873C321B306880041CCF1 /* Pothole DetectorTests */,
 				8BF873CE21B306880041CCF1 /* Pothole DetectorUITests */,
 				8BF873AD21B306840041CCF1 /* Products */,
+				E605A1C97C6FDF81ABF0C0F7 /* Pods */,
+				0F7109A581064B5E7CE46117 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +154,24 @@
 		8BF873AE21B306840041CCF1 /* Pothole Detector */ = {
 			isa = PBXGroup;
 			children = (
+				8B52404221B8F30700BE8559 /* NeighborhoodScoreViewController.swift */,
+				8B52403421B8C75300BE8559 /* BaseViewController.swift */,
 				8BF873AF21B306840041CCF1 /* AppDelegate.swift */,
-				8BF873B121B306840041CCF1 /* ViewController.swift */,
+				8BF873B121B306840041CCF1 /* DashboardViewController.swift */,
 				8BF873B321B306840041CCF1 /* Main.storyboard */,
+				8B52404421B8F60D00BE8559 /* NeighborhoodScoreTableViewCell.swift */,
 				8BF873B621B306880041CCF1 /* Assets.xcassets */,
 				8BF873B821B306880041CCF1 /* LaunchScreen.storyboard */,
 				8BF873BB21B306880041CCF1 /* Info.plist */,
+				8B49C25A21B740C100293EBC /* PotholeModel.swift */,
+				8B52403C21B8C90C00BE8559 /* MenuViewController.swift */,
+				8B9AC88C21BDB895000D49FE /* SpeechTranslator.swift */,
+				8B9AC88E21BDE6F8000D49FE /* NeighborhoodDetailViewController.swift */,
+				8B9AC89021BDF943000D49FE /* RankingUserTableViewCell.swift */,
+				8B9AC89221BE0B80000D49FE /* UserListModel.swift */,
+				8B9AC89421BE0BA7000D49FE /* PotHoleRankingModel.swift */,
+				8B9AC89621BEE5C0000D49FE /* LoginViewController.swift */,
+				8B9AC89821BEF561000D49FE /* UserModel.swift */,
 			);
 			path = "Pothole Detector";
 			sourceTree = "<group>";
@@ -125,6 +194,19 @@
 			path = "Pothole DetectorUITests";
 			sourceTree = "<group>";
 		};
+		E605A1C97C6FDF81ABF0C0F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADAA9167BF58ACF2ED925715 /* Pods-Pothole Detector.debug.xcconfig */,
+				176FC030822C8922E54BB48B /* Pods-Pothole Detector.release.xcconfig */,
+				019102B5942722E4D6F90888 /* Pods-Pothole DetectorTests.debug.xcconfig */,
+				083E09CCAD70ECDC5C1C80AF /* Pods-Pothole DetectorTests.release.xcconfig */,
+				EA483120B5575EB4AE8D4761 /* Pods-Pothole DetectorUITests.debug.xcconfig */,
+				84F8B135ACF7FDB375434C87 /* Pods-Pothole DetectorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +214,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BF873D421B306880041CCF1 /* Build configuration list for PBXNativeTarget "Pothole Detector" */;
 			buildPhases = (
+				9C29B8BA3EA5231E77895C95 /* [CP] Check Pods Manifest.lock */,
 				8BF873A821B306840041CCF1 /* Sources */,
 				8BF873A921B306840041CCF1 /* Frameworks */,
 				8BF873AA21B306840041CCF1 /* Resources */,
+				946D9573CE067B3DA1A6E6B5 /* [CP] Embed Pods Frameworks */,
+				8CC494F6A6E955CDDFD66FF5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BF873D721B306880041CCF1 /* Build configuration list for PBXNativeTarget "Pothole DetectorTests" */;
 			buildPhases = (
+				36ED8561133FDFE367D192AC /* [CP] Check Pods Manifest.lock */,
 				8BF873BC21B306880041CCF1 /* Sources */,
 				8BF873BD21B306880041CCF1 /* Frameworks */,
 				8BF873BE21B306880041CCF1 /* Resources */,
+				2F12217EF85030B6CF9F62E5 /* [CP] Embed Pods Frameworks */,
+				61A5388CA1045EB6F8802E8F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BF873DA21B306880041CCF1 /* Build configuration list for PBXNativeTarget "Pothole DetectorUITests" */;
 			buildPhases = (
+				0C88F59F0CAC19C83707F56E /* [CP] Check Pods Manifest.lock */,
 				8BF873C721B306880041CCF1 /* Sources */,
 				8BF873C821B306880041CCF1 /* Frameworks */,
 				8BF873C921B306880041CCF1 /* Resources */,
+				5D78818B3926F17A559B83D7 /* [CP] Embed Pods Frameworks */,
+				C871412A958ADD12C744179F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,8 +320,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B52402F21B88AE300BE8559 /* detectedPothole.amr in Resources */,
 				8BF873BA21B306880041CCF1 /* LaunchScreen.storyboard in Resources */,
 				8BF873B721B306880041CCF1 /* Assets.xcassets in Resources */,
+				8B52403121B89E3600BE8559 /* detectedPothole.mp3 in Resources */,
 				8BF873B521B306840041CCF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,12 +344,184 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C88F59F0CAC19C83707F56E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pothole DetectorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F12217EF85030B6CF9F62E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pothole DetectorTests/Pods-Pothole DetectorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36ED8561133FDFE367D192AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pothole DetectorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D78818B3926F17A559B83D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pothole DetectorUITests/Pods-Pothole DetectorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61A5388CA1045EB6F8802E8F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pothole DetectorTests/Pods-Pothole DetectorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CC494F6A6E955CDDFD66FF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pothole Detector/Pods-Pothole Detector-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		946D9573CE067B3DA1A6E6B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pothole Detector/Pods-Pothole Detector-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pothole Detector/Pods-Pothole Detector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C29B8BA3EA5231E77895C95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pothole Detector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C871412A958ADD12C744179F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pothole DetectorUITests/Pods-Pothole DetectorUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8BF873A821B306840041CCF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BF873B221B306840041CCF1 /* ViewController.swift in Sources */,
+				8B49C25B21B740C200293EBC /* PotholeModel.swift in Sources */,
+				8B52403521B8C75400BE8559 /* BaseViewController.swift in Sources */,
+				8B9AC89521BE0BA7000D49FE /* PotHoleRankingModel.swift in Sources */,
+				8B9AC89321BE0B80000D49FE /* UserListModel.swift in Sources */,
+				8BF873B221B306840041CCF1 /* DashboardViewController.swift in Sources */,
+				8B9AC88D21BDB895000D49FE /* SpeechTranslator.swift in Sources */,
+				8B52404321B8F30700BE8559 /* NeighborhoodScoreViewController.swift in Sources */,
+				8B9AC88F21BDE6F8000D49FE /* NeighborhoodDetailViewController.swift in Sources */,
+				8B9AC89921BEF561000D49FE /* UserModel.swift in Sources */,
+				8B52403D21B8C90C00BE8559 /* MenuViewController.swift in Sources */,
+				8B9AC89121BDF943000D49FE /* RankingUserTableViewCell.swift in Sources */,
+				8B52404521B8F60D00BE8559 /* NeighborhoodScoreTableViewCell.swift in Sources */,
+				8B9AC89721BEE5C0000D49FE /* LoginViewController.swift in Sources */,
 				8BF873B021B306840041CCF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,10 +695,11 @@
 		};
 		8BF873D521B306880041CCF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADAA9167BF58ACF2ED925715 /* Pods-Pothole Detector.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6X5B26J782;
+				DEVELOPMENT_TEAM = 7ER3GBSA2U;
 				INFOPLIST_FILE = "Pothole Detector/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,10 +714,11 @@
 		};
 		8BF873D621B306880041CCF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 176FC030822C8922E54BB48B /* Pods-Pothole Detector.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6X5B26J782;
+				DEVELOPMENT_TEAM = 7ER3GBSA2U;
 				INFOPLIST_FILE = "Pothole Detector/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +733,7 @@
 		};
 		8BF873D821B306880041CCF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 019102B5942722E4D6F90888 /* Pods-Pothole DetectorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +755,7 @@
 		};
 		8BF873D921B306880041CCF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 083E09CCAD70ECDC5C1C80AF /* Pods-Pothole DetectorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +777,7 @@
 		};
 		8BF873DB21B306880041CCF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA483120B5575EB4AE8D4761 /* Pods-Pothole DetectorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +798,7 @@
 		};
 		8BF873DC21B306880041CCF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84F8B135ACF7FDB375434C87 /* Pods-Pothole DetectorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

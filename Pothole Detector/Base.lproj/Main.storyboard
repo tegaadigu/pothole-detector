@@ -1,24 +1,421 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d1X-4B-V8Y">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Dashboard-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DashboardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="DashboardViewController" customModule="Pothole_Detector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3rN-FN-X1D">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0c-e5-WG5">
+                                <rect key="frame" x="16" y="576" width="121" height="51"/>
+                                <color key="backgroundColor" red="0.04582497824498824" green="0.2297212124120786" blue="0.3333333432674408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="tintColor" red="0.5914533496231541" green="1" blue="0.96949049760712436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onStartStopToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7V2-hP-bo4"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3rN-FN-X1D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1ny-p6-Y99"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T0c-e5-WG5" secondAttribute="trailing" constant="238" id="5oN-ux-QDK"/>
+                            <constraint firstItem="3rN-FN-X1D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9pj-dc-rmg"/>
+                            <constraint firstItem="3rN-FN-X1D" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="CSf-gF-EGy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="T0c-e5-WG5" secondAttribute="bottom" constant="40" id="Cu1-G5-Xn6"/>
+                            <constraint firstItem="T0c-e5-WG5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cL2-16-iEX"/>
+                            <constraint firstItem="3rN-FN-X1D" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ik8-Vw-bCs"/>
+                            <constraint firstItem="T0c-e5-WG5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="512" id="rzs-R2-ts6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Dashboard" id="Iiy-GF-t0H"/>
+                    <connections>
+                        <outlet property="mapView" destination="3rN-FN-X1D" id="BWw-Xa-8Db"/>
+                        <outlet property="stopBtn" destination="T0c-e5-WG5" id="l3E-Rh-ldd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="3588" y="186.65667166416793"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="JIM-Me-WSi">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="DBg-P2-gyR" customClass="LoginViewController" customModule="Pothole_Detector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ClH-wL-8Cq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="nDU-Dg-qM6">
+                                <rect key="frame" x="16" y="118" width="343" height="440"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pothole Hunter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OW6-dq-nfu">
+                                <rect key="frame" x="16" y="56" width="343" height="36"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OoD-je-mRH">
+                                <rect key="frame" x="0.0" y="592" width="375" height="30"/>
+                                <state key="normal" title="Login With Facebook"/>
+                                <connections>
+                                    <action selector="loginBtnClicked:" destination="DBg-P2-gyR" eventType="touchUpInside" id="yHR-A7-kyv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OoD-je-mRH" firstAttribute="trailing" secondItem="aiL-aM-AXD" secondAttribute="trailing" id="4c0-Dz-Wic"/>
+                            <constraint firstItem="aiL-aM-AXD" firstAttribute="bottom" secondItem="OoD-je-mRH" secondAttribute="bottom" constant="45" id="IdD-c2-whw"/>
+                            <constraint firstItem="OoD-je-mRH" firstAttribute="top" secondItem="nDU-Dg-qM6" secondAttribute="bottom" constant="34" id="Jl7-B0-Ieg"/>
+                            <constraint firstItem="OW6-dq-nfu" firstAttribute="top" secondItem="aiL-aM-AXD" secondAttribute="top" constant="36" id="KIV-s3-OsQ"/>
+                            <constraint firstItem="OW6-dq-nfu" firstAttribute="leading" secondItem="aiL-aM-AXD" secondAttribute="leading" constant="16" id="LXE-4e-Yvx"/>
+                            <constraint firstItem="OoD-je-mRH" firstAttribute="leading" secondItem="aiL-aM-AXD" secondAttribute="leading" id="ahO-I3-7Al"/>
+                            <constraint firstItem="OoD-je-mRH" firstAttribute="top" secondItem="nDU-Dg-qM6" secondAttribute="bottom" constant="34" id="bAm-Jg-aJd"/>
+                            <constraint firstItem="aiL-aM-AXD" firstAttribute="trailing" secondItem="nDU-Dg-qM6" secondAttribute="trailing" constant="16" id="f6W-fi-sbf"/>
+                            <constraint firstItem="nDU-Dg-qM6" firstAttribute="leading" secondItem="aiL-aM-AXD" secondAttribute="leading" constant="16" id="fMs-HC-X8i"/>
+                            <constraint firstItem="aiL-aM-AXD" firstAttribute="trailing" secondItem="OW6-dq-nfu" secondAttribute="trailing" constant="16" id="yQi-sH-vSB"/>
+                            <constraint firstItem="nDU-Dg-qM6" firstAttribute="top" secondItem="OW6-dq-nfu" secondAttribute="bottom" constant="26" id="z8H-sh-sJn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aiL-aM-AXD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xEy-Xr-3ga"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eRI-EX-Xsb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="-112.89355322338831"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9AF-R9-o5x">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GVz-B7-1c3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SS7-aT-HIv">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="flh-tm-RsA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pxp-DR-Ob9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080.8" y="133.5832083958021"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="fB8-HS-ANp">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="h8l-mc-M0j" customClass="MenuViewController" customModule="Pothole_Detector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8gq-tw-5PN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnj-lc-L0L">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="btnCloseMenuOverlay:" destination="h8l-mc-M0j" eventType="touchUpInside" id="QCf-XN-9ed"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTB-wn-UUE">
+                                <rect key="frame" x="0.0" y="20" width="305" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PotHole Hunter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7R-BQ-l0M">
+                                        <rect key="frame" x="0.0" y="8" width="305" height="56"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2T-Zx-LGc">
+                                        <rect key="frame" x="8" y="100" width="289" height="56"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
+                                        <state key="normal" title="Dashboard">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnDashboardTapped:" destination="h8l-mc-M0j" eventType="touchUpInside" id="q8t-RI-f4K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOJ-7b-vv6">
+                                        <rect key="frame" x="8" y="583" width="289" height="56"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                        <state key="normal" title="Logout">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AwT-1z-zqf">
+                                        <rect key="frame" x="8" y="165" width="289" height="56"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                        <state key="normal" title="Neighborhood Score">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnNeighborhoodScoreTapped:" destination="h8l-mc-M0j" eventType="touchUpInside" id="tri-e1-188"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.3447664317907505" green="0.78276823806108675" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="p7R-BQ-l0M" secondAttribute="trailing" id="7Cr-Bk-nM9"/>
+                                    <constraint firstAttribute="bottom" secondItem="p7R-BQ-l0M" secondAttribute="bottom" constant="583" id="BTg-Cw-2RA"/>
+                                    <constraint firstItem="w2T-Zx-LGc" firstAttribute="top" secondItem="p7R-BQ-l0M" secondAttribute="bottom" constant="36" id="CAk-sO-THV"/>
+                                    <constraint firstItem="pOJ-7b-vv6" firstAttribute="leading" secondItem="gTB-wn-UUE" secondAttribute="leading" constant="8" id="Eam-6e-nTy"/>
+                                    <constraint firstAttribute="trailing" secondItem="pOJ-7b-vv6" secondAttribute="trailing" constant="8" id="Q2x-3g-RWm"/>
+                                    <constraint firstItem="pOJ-7b-vv6" firstAttribute="top" secondItem="w2T-Zx-LGc" secondAttribute="bottom" constant="427" id="Sr3-Lf-v7N"/>
+                                    <constraint firstItem="w2T-Zx-LGc" firstAttribute="leading" secondItem="gTB-wn-UUE" secondAttribute="leading" constant="8" id="YUs-VK-1hc"/>
+                                    <constraint firstItem="pOJ-7b-vv6" firstAttribute="top" secondItem="AwT-1z-zqf" secondAttribute="bottom" constant="362" id="Yas-FL-j1J"/>
+                                    <constraint firstItem="AwT-1z-zqf" firstAttribute="top" secondItem="w2T-Zx-LGc" secondAttribute="bottom" constant="9" id="bpq-Tr-W5l"/>
+                                    <constraint firstAttribute="trailing" secondItem="AwT-1z-zqf" secondAttribute="trailing" constant="8" id="eIb-SY-bul"/>
+                                    <constraint firstAttribute="bottom" secondItem="pOJ-7b-vv6" secondAttribute="bottom" constant="8" id="fCH-lt-KaJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="w2T-Zx-LGc" secondAttribute="trailing" constant="8" id="iTN-yW-8ZH"/>
+                                    <constraint firstItem="AwT-1z-zqf" firstAttribute="leading" secondItem="gTB-wn-UUE" secondAttribute="leading" constant="8" id="jUz-sV-BT5"/>
+                                    <constraint firstItem="p7R-BQ-l0M" firstAttribute="leading" secondItem="gTB-wn-UUE" secondAttribute="leading" id="ny9-g3-wIB"/>
+                                    <constraint firstAttribute="bottom" secondItem="w2T-Zx-LGc" secondAttribute="bottom" constant="491" id="qWZ-fo-wyS"/>
+                                    <constraint firstItem="p7R-BQ-l0M" firstAttribute="top" secondItem="gTB-wn-UUE" secondAttribute="top" constant="8" id="tqs-J9-2ok"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xnj-lc-L0L" firstAttribute="trailing" secondItem="coT-UZ-WiI" secondAttribute="trailing" id="2b3-EJ-Szn"/>
+                            <constraint firstItem="gTB-wn-UUE" firstAttribute="bottom" secondItem="coT-UZ-WiI" secondAttribute="bottom" id="LKf-xB-UOb"/>
+                            <constraint firstItem="xnj-lc-L0L" firstAttribute="leading" secondItem="coT-UZ-WiI" secondAttribute="leading" id="NRR-gl-97C"/>
+                            <constraint firstItem="xnj-lc-L0L" firstAttribute="bottom" secondItem="coT-UZ-WiI" secondAttribute="bottom" id="Psb-EF-6iz"/>
+                            <constraint firstItem="xnj-lc-L0L" firstAttribute="top" secondItem="coT-UZ-WiI" secondAttribute="top" id="V2a-P9-F5f"/>
+                            <constraint firstItem="gTB-wn-UUE" firstAttribute="leading" secondItem="coT-UZ-WiI" secondAttribute="leading" id="iYa-FK-vKs"/>
+                            <constraint firstItem="coT-UZ-WiI" firstAttribute="trailing" secondItem="gTB-wn-UUE" secondAttribute="trailing" constant="70" id="jNY-cX-eW1"/>
+                            <constraint firstItem="gTB-wn-UUE" firstAttribute="top" secondItem="coT-UZ-WiI" secondAttribute="top" id="lol-yW-In2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="coT-UZ-WiI"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnCloseOverlay" destination="xnj-lc-L0L" id="Bi3-pz-god"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8DA-1w-uKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1583.2" y="-248.72563718140933"/>
+        </scene>
+        <!--Neighborhood Ranking-->
+        <scene sceneID="beV-mN-xMN">
+            <objects>
+                <tableViewController storyboardIdentifier="NeighborhoodScoreViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YaM-Ea-AMK" customClass="NeighborhoodScoreViewController" customModule="Pothole_Detector" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aBo-tM-dct">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NeighborhoodScoreTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NeighborhoodScoreTableViewCell" rowHeight="111" id="7fs-b5-AsS" customClass="NeighborhoodScoreTableViewCell" customModule="Pothole_Detector" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="111"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7fs-b5-AsS" id="tIA-ch-Yd8">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="110.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arcola East" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZqR-ZT-OYa">
+                                            <rect key="frame" x="16" y="11" width="343" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHW-LY-Y8O">
+                                            <rect key="frame" x="16" y="54" width="343" height="46"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="46" id="4fk-T5-uuq"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="QHW-LY-Y8O" secondAttribute="bottom" id="2je-l1-FcJ"/>
+                                        <constraint firstItem="QHW-LY-Y8O" firstAttribute="leading" secondItem="tIA-ch-Yd8" secondAttribute="leadingMargin" id="6vI-Ni-8md"/>
+                                        <constraint firstItem="QHW-LY-Y8O" firstAttribute="top" secondItem="ZqR-ZT-OYa" secondAttribute="bottom" constant="-1" id="8G2-26-FJW"/>
+                                        <constraint firstItem="ZqR-ZT-OYa" firstAttribute="top" secondItem="tIA-ch-Yd8" secondAttribute="topMargin" id="FZx-xG-gju"/>
+                                        <constraint firstItem="QHW-LY-Y8O" firstAttribute="top" secondItem="ZqR-ZT-OYa" secondAttribute="bottom" constant="-1" id="K5y-AW-28F"/>
+                                        <constraint firstItem="QHW-LY-Y8O" firstAttribute="trailing" secondItem="tIA-ch-Yd8" secondAttribute="trailingMargin" id="dTF-1L-mfa"/>
+                                        <constraint firstItem="ZqR-ZT-OYa" firstAttribute="trailing" secondItem="tIA-ch-Yd8" secondAttribute="trailingMargin" id="ooh-qL-ycr"/>
+                                        <constraint firstItem="ZqR-ZT-OYa" firstAttribute="leading" secondItem="tIA-ch-Yd8" secondAttribute="leadingMargin" id="pQq-bC-2Zp"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="neighborHoodLabel" destination="ZqR-ZT-OYa" id="bCN-RP-LKv"/>
+                                    <outlet property="potholeCountLabel" destination="QHW-LY-Y8O" id="be8-65-uGx"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="YaM-Ea-AMK" id="Tw8-xJ-OuG"/>
+                            <outlet property="delegate" destination="YaM-Ea-AMK" id="9QL-jc-QAP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Neighborhood Ranking" id="0HE-xM-OxV"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o9B-sM-M7U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3439.1999999999998" y="-454.72263868065971"/>
+        </scene>
+        <!--Pothole Detail Page-->
+        <scene sceneID="5hV-Ak-4gU">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IRS-sz-zRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="NeighborhoodDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f4Q-aJ-Pu0" customClass="NeighborhoodDetailViewController" customModule="Pothole_Detector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k81-E5-5hd" customClass="NeighborhoodScoreTableViewCell" customModule="Pothole_Detector" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p8V-Ah-MWN">
+                                <rect key="frame" x="0.0" y="478" width="375" height="189"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="189" id="1Vp-vv-iA1"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RankingUserTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RankingUserTableViewCell" rowHeight="110" id="Lmm-2k-CZB" customClass="RankingUserTableViewCell" customModule="Pothole_Detector" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lmm-2k-CZB" id="2Fj-Ec-J0o">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="109.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pky-nN-rB0">
+                                                    <rect key="frame" x="15" y="11" width="345" height="57"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIR-Rp-auj">
+                                                    <rect key="frame" x="15" y="67" width="345" height="32"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bIR-Rp-auj" firstAttribute="bottom" secondItem="2Fj-Ec-J0o" secondAttribute="bottomMargin" id="9bq-JP-ZZn"/>
+                                                <constraint firstItem="bIR-Rp-auj" firstAttribute="trailing" secondItem="2Fj-Ec-J0o" secondAttribute="trailingMargin" id="BTv-S5-yje"/>
+                                                <constraint firstItem="Pky-nN-rB0" firstAttribute="top" secondItem="2Fj-Ec-J0o" secondAttribute="topMargin" id="Bxv-Bh-BiD"/>
+                                                <constraint firstItem="Pky-nN-rB0" firstAttribute="leading" secondItem="2Fj-Ec-J0o" secondAttribute="leadingMargin" id="INr-l2-skN"/>
+                                                <constraint firstItem="Pky-nN-rB0" firstAttribute="trailing" secondItem="2Fj-Ec-J0o" secondAttribute="trailingMargin" id="NKE-AY-Jyu"/>
+                                                <constraint firstItem="bIR-Rp-auj" firstAttribute="top" secondItem="2Fj-Ec-J0o" secondAttribute="topMargin" constant="56" id="P5M-fL-lLc"/>
+                                                <constraint firstItem="bIR-Rp-auj" firstAttribute="leading" secondItem="2Fj-Ec-J0o" secondAttribute="leadingMargin" id="PVS-pp-qNV"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Pky-nN-rB0" secondAttribute="bottom" constant="31" id="TTm-3K-cWE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="potholeCountLabel" destination="bIR-Rp-auj" id="VwQ-n1-v2A"/>
+                                            <outlet property="userNameLabel" destination="Pky-nN-rB0" id="ILm-oO-MsV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="f4Q-aJ-Pu0" id="eS2-Pu-2Y2"/>
+                                    <outlet property="delegate" destination="f4Q-aJ-Pu0" id="mbB-Ty-VAE"/>
+                                </connections>
+                            </tableView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="J20-05-w2a">
+                                <rect key="frame" x="0.0" y="64" width="375" height="406"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J20-05-w2a" firstAttribute="trailing" secondItem="NAZ-4A-MOe" secondAttribute="trailing" id="GQ5-EM-krS"/>
+                            <constraint firstItem="J20-05-w2a" firstAttribute="leading" secondItem="NAZ-4A-MOe" secondAttribute="leading" id="Gv7-Wx-2p0"/>
+                            <constraint firstItem="J20-05-w2a" firstAttribute="top" secondItem="NAZ-4A-MOe" secondAttribute="top" id="YrA-t3-AkT"/>
+                            <constraint firstItem="p8V-Ah-MWN" firstAttribute="leading" secondItem="NAZ-4A-MOe" secondAttribute="leading" id="als-em-gIe"/>
+                            <constraint firstItem="p8V-Ah-MWN" firstAttribute="top" secondItem="J20-05-w2a" secondAttribute="bottom" constant="8" id="eD0-1j-nhh"/>
+                            <constraint firstItem="p8V-Ah-MWN" firstAttribute="bottom" secondItem="NAZ-4A-MOe" secondAttribute="bottom" id="eK3-kU-iFs"/>
+                            <constraint firstItem="p8V-Ah-MWN" firstAttribute="trailing" secondItem="NAZ-4A-MOe" secondAttribute="trailing" id="pIT-5Y-5ZU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NAZ-4A-MOe"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pothole Detail Page" id="VrE-Jp-7Wt"/>
+                    <connections>
+                        <outlet property="mapView" destination="J20-05-w2a" id="LUc-73-rkN"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="5367.1999999999998" y="-479.01049475262374"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SCi-8K-4bg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NlE-ic-yIS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JlA-qS-8nG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YaM-Ea-AMK" kind="relationship" relationship="rootViewController" id="3t3-eZ-pgS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2fP-YF-v6m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2500" y="-454.72263868065971"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dqd-LI-8JI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gmb-qL-rVe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="r3V-u6-NKR">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="f4Q-aJ-Pu0" kind="relationship" relationship="rootViewController" id="Zuw-PR-cBu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rYE-0h-79k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4428" y="-479.01049475262374"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CR3-zg-IRo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d1X-4B-V8Y" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hxk-Vw-isg">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DBg-P2-gyR" kind="relationship" relationship="rootViewController" id="WRe-Rc-3JG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1M0-sh-nbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-895.20000000000005" y="-112.89355322338831"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo" width="768" height="768"/>
+    </resources>
 </document>
