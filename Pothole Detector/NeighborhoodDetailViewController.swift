@@ -18,7 +18,7 @@ class NeighborhoodDetailViewController: UIViewController, UITableViewDelegate, U
     override func viewDidLoad() {
         super.viewDidLoad()
         self.mapView.showsUserLocation = true
-        //self.updatePotholesInMap(userList: self.potHoleRanking.userList)
+        self.updatePotholesInMap(potholes: self.potHoleRanking.potholes)
     }
 
     
@@ -33,5 +33,18 @@ class NeighborhoodDetailViewController: UIViewController, UITableViewDelegate, U
         cell.potholeCountLabel.text = String(userList.potholeCount)+" Pothole Reported"
         
         return cell
+    }
+    
+    private func updatePotholesInMap(potholes: [PotHole]) {
+        for pothole in potholes {
+            let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: pothole.lat, longitude: pothole.lon), span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
+            
+            self.mapView.setRegion(region, animated: true)
+
+            let CLLCoordType = CLLocationCoordinate2D(latitude: pothole.lat, longitude: pothole.lon);
+            let anno = MKPointAnnotation();
+            anno.coordinate = CLLCoordType;
+            self.mapView.addAnnotation(anno);
+        }
     }
 }

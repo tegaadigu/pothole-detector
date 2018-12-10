@@ -21,6 +21,8 @@
 		8B9AC89121BDF943000D49FE /* RankingUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AC89021BDF943000D49FE /* RankingUserTableViewCell.swift */; };
 		8B9AC89321BE0B80000D49FE /* UserListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AC89221BE0B80000D49FE /* UserListModel.swift */; };
 		8B9AC89521BE0BA7000D49FE /* PotHoleRankingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AC89421BE0BA7000D49FE /* PotHoleRankingModel.swift */; };
+		8B9AC89721BEE5C0000D49FE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AC89621BEE5C0000D49FE /* LoginViewController.swift */; };
+		8B9AC89921BEF561000D49FE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AC89821BEF561000D49FE /* UserModel.swift */; };
 		8BF873B021B306840041CCF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF873AF21B306840041CCF1 /* AppDelegate.swift */; };
 		8BF873B221B306840041CCF1 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF873B121B306840041CCF1 /* DashboardViewController.swift */; };
 		8BF873B521B306840041CCF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF873B321B306840041CCF1 /* Main.storyboard */; };
@@ -67,6 +69,8 @@
 		8B9AC89021BDF943000D49FE /* RankingUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingUserTableViewCell.swift; sourceTree = "<group>"; };
 		8B9AC89221BE0B80000D49FE /* UserListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListModel.swift; sourceTree = "<group>"; };
 		8B9AC89421BE0BA7000D49FE /* PotHoleRankingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotHoleRankingModel.swift; sourceTree = "<group>"; };
+		8B9AC89621BEE5C0000D49FE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8B9AC89821BEF561000D49FE /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		8BF873AC21B306840041CCF1 /* Pothole Detector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pothole Detector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF873AF21B306840041CCF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BF873B121B306840041CCF1 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 				8B9AC89021BDF943000D49FE /* RankingUserTableViewCell.swift */,
 				8B9AC89221BE0B80000D49FE /* UserListModel.swift */,
 				8B9AC89421BE0BA7000D49FE /* PotHoleRankingModel.swift */,
+				8B9AC89621BEE5C0000D49FE /* LoginViewController.swift */,
+				8B9AC89821BEF561000D49FE /* UserModel.swift */,
 			);
 			path = "Pothole Detector";
 			sourceTree = "<group>";
@@ -442,10 +448,20 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Pothole Detector/Pods-Pothole Detector-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,9 +517,11 @@
 				8B9AC88D21BDB895000D49FE /* SpeechTranslator.swift in Sources */,
 				8B52404321B8F30700BE8559 /* NeighborhoodScoreViewController.swift in Sources */,
 				8B9AC88F21BDE6F8000D49FE /* NeighborhoodDetailViewController.swift in Sources */,
+				8B9AC89921BEF561000D49FE /* UserModel.swift in Sources */,
 				8B52403D21B8C90C00BE8559 /* MenuViewController.swift in Sources */,
 				8B9AC89121BDF943000D49FE /* RankingUserTableViewCell.swift in Sources */,
 				8B52404521B8F60D00BE8559 /* NeighborhoodScoreTableViewCell.swift in Sources */,
+				8B9AC89721BEE5C0000D49FE /* LoginViewController.swift in Sources */,
 				8BF873B021B306840041CCF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

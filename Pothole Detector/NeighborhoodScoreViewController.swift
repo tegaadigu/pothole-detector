@@ -18,7 +18,8 @@ class NeighborhoodScoreViewController: UITableViewController, CLLocationManagerD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        locationManager.delegate = self as? CLLocationManagerDelegate
+        self.startLoading();
+        locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
         
@@ -83,8 +84,6 @@ class NeighborhoodScoreViewController: UITableViewController, CLLocationManagerD
      * Retrieve pothole from api endpoint.
      **/
     private func getPotHoles(latitude: Double, longitude: Double) {
-        self.startLoading();
-//        let url : String = "https://bmy2u2cwc4.execute-api.us-west-1.amazonaws.com/beta/pothole/ranking"
         var components = URLComponents()
         components.scheme = "https"
         components.host = "bmy2u2cwc4.execute-api.us-west-1.amazonaws.com"
@@ -93,14 +92,9 @@ class NeighborhoodScoreViewController: UITableViewController, CLLocationManagerD
             URLQueryItem(name: "lat", value: String(latitude)),
             URLQueryItem(name: "lon", value: String(longitude)),
         ]
-        
-        let url = components.url
-        
-        print(url);
-        
         let sessionConfig = URLSessionConfiguration.default
         let session = URLSession(configuration: sessionConfig)
-        let request = URLRequest(url: url!)
+        let request = URLRequest(url: components.url!)
         let task = session.dataTask(with: request){(data, response, error) in
             // completion handler block
             if (error != nil) {

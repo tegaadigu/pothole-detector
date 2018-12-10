@@ -19,6 +19,7 @@ class DashboardViewController: BaseViewController, CLLocationManagerDelegate, SF
     var timer: Timer!
     let THRESHOLD = 0.4;
     var stop = false;
+    var userId = 0;
     
     // MARK: Properties
     @IBOutlet weak var stopBtn: UIButton!
@@ -71,7 +72,6 @@ class DashboardViewController: BaseViewController, CLLocationManagerDelegate, SF
             }
             // start monitoring activity.
             self.startAccelerometers()
-//            self.monitorActivity();
         }
     }
     
@@ -113,9 +113,6 @@ class DashboardViewController: BaseViewController, CLLocationManagerDelegate, SF
                             self.potHoleDetected();
                         }
                     }
-//                    self.aLabelX.text = String(data.userAcceleration.x)
-//                    self.aLabelY.text = String(data.userAcceleration.y)
-//                    self.aLabelZ.text = String(data.userAcceleration.z)
                 }
             })
         }
@@ -292,27 +289,12 @@ class DashboardViewController: BaseViewController, CLLocationManagerDelegate, SF
         
         // Now let's encode out Post struct into JSON data...
         let encoder = JSONEncoder()
-        let dataToPost = PostPothole(lat: self.lastLocation.coordinate.latitude, lon: self.lastLocation.coordinate.longitude, user_id: 1, created_on: "2018-12-06");
+        let dataToPost = PostPothole(lat: self.lastLocation.coordinate.latitude, lon: self.lastLocation.coordinate.longitude, user_id: self.userId, created_on: "2018-12-06");
         do {
             let jsonData = try encoder.encode(dataToPost)
             // ... and set our request's HTTP body
             request.httpBody = jsonData
             print("jsonData: ", String(data: request.httpBody!, encoding: .utf8) ?? "no body data")
-            //activate speech recognition
-            // Declare Alert message
-            let dialogMessage = UIAlertController(title: "Pothole Saved!", message: "new pothole stored.", preferredStyle: .alert)
-            
-            // Create OK button with action handler
-            let ok = UIAlertAction(title: "Ok", style: .default, handler: { (action) -> Void in
-                self.stop = false;
-                self.locationManager.startUpdatingLocation();
-            })
-            
-            //Add OK and Cancel button to dialog message
-            dialogMessage.addAction(ok)
-            
-            // Present dialog message to user
-            self.present(dialogMessage, animated: true, completion: nil)
         } catch {
             print("Couldnt encode to json")
         }

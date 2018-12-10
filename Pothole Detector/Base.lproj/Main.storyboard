@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GVz-B7-1c3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="d1X-4B-V8Y">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -56,7 +56,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2648.8000000000002" y="186.65667166416793"/>
+            <point key="canvasLocation" x="3588" y="186.65667166416793"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="JIM-Me-WSi">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="DBg-P2-gyR" customClass="LoginViewController" customModule="Pothole_Detector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ClH-wL-8Cq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="nDU-Dg-qM6">
+                                <rect key="frame" x="16" y="118" width="343" height="440"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pothole Hunter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OW6-dq-nfu">
+                                <rect key="frame" x="16" y="56" width="343" height="36"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OoD-je-mRH">
+                                <rect key="frame" x="0.0" y="592" width="375" height="30"/>
+                                <state key="normal" title="Login With Facebook"/>
+                                <connections>
+                                    <action selector="loginBtnClicked:" destination="DBg-P2-gyR" eventType="touchUpInside" id="yHR-A7-kyv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OoD-je-mRH" firstAttribute="trailing" secondItem="aiL-aM-AXD" secondAttribute="trailing" id="4c0-Dz-Wic"/>
+                            <constraint firstItem="aiL-aM-AXD" firstAttribute="bottom" secondItem="OoD-je-mRH" secondAttribute="bottom" constant="45" id="IdD-c2-whw"/>
+                            <constraint firstItem="OoD-je-mRH" firstAttribute="top" secondItem="nDU-Dg-qM6" secondAttribute="bottom" constant="34" id="Jl7-B0-Ieg"/>
+                            <constraint firstItem="OW6-dq-nfu" firstAttribute="top" secondItem="aiL-aM-AXD" secondAttribute="top" constant="36" id="KIV-s3-OsQ"/>
+                            <constraint firstItem="OW6-dq-nfu" firstAttribute="leading" secondItem="aiL-aM-AXD" secondAttribute="leading" constant="16" id="LXE-4e-Yvx"/>
+                            <constraint firstItem="OoD-je-mRH" firstAttribute="leading" secondItem="aiL-aM-AXD" secondAttribute="leading" id="ahO-I3-7Al"/>
+                            <constraint firstItem="OoD-je-mRH" firstAttribute="top" secondItem="nDU-Dg-qM6" secondAttribute="bottom" constant="34" id="bAm-Jg-aJd"/>
+                            <constraint firstItem="aiL-aM-AXD" firstAttribute="trailing" secondItem="nDU-Dg-qM6" secondAttribute="trailing" constant="16" id="f6W-fi-sbf"/>
+                            <constraint firstItem="nDU-Dg-qM6" firstAttribute="leading" secondItem="aiL-aM-AXD" secondAttribute="leading" constant="16" id="fMs-HC-X8i"/>
+                            <constraint firstItem="aiL-aM-AXD" firstAttribute="trailing" secondItem="OW6-dq-nfu" secondAttribute="trailing" constant="16" id="yQi-sH-vSB"/>
+                            <constraint firstItem="nDU-Dg-qM6" firstAttribute="top" secondItem="OW6-dq-nfu" secondAttribute="bottom" constant="26" id="z8H-sh-sJn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aiL-aM-AXD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xEy-Xr-3ga"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eRI-EX-Xsb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="-112.89355322338831"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9AF-R9-o5x">
@@ -74,7 +121,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pxp-DR-Ob9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141.59999999999999" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1080.8" y="133.5832083958021"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="fB8-HS-ANp">
@@ -169,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8DA-1w-uKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="644" y="-248"/>
+            <point key="canvasLocation" x="1583.2" y="-248.72563718140933"/>
         </scene>
         <!--Neighborhood Ranking-->
         <scene sceneID="beV-mN-xMN">
@@ -229,7 +276,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9B-sM-M7U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2500" y="-454.72263868065971"/>
+            <point key="canvasLocation" x="3439.1999999999998" y="-454.72263868065971"/>
         </scene>
         <!--Pothole Detail Page-->
         <scene sceneID="5hV-Ak-4gU">
@@ -311,7 +358,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="4428" y="-479.01049475262374"/>
+            <point key="canvasLocation" x="5367.1999999999998" y="-479.01049475262374"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SCi-8K-4bg">
@@ -329,7 +376,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2fP-YF-v6m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1560.8" y="-454.72263868065971"/>
+            <point key="canvasLocation" x="2500" y="-454.72263868065971"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dqd-LI-8JI">
@@ -347,7 +394,28 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rYE-0h-79k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3488.8000000000002" y="-479.01049475262374"/>
+            <point key="canvasLocation" x="4428" y="-479.01049475262374"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CR3-zg-IRo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d1X-4B-V8Y" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hxk-Vw-isg">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DBg-P2-gyR" kind="relationship" relationship="rootViewController" id="WRe-Rc-3JG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1M0-sh-nbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-895.20000000000005" y="-112.89355322338831"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo" width="768" height="768"/>
+    </resources>
 </document>

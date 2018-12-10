@@ -19,8 +19,14 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        if let savedUser = UserModel.loadUserLocally() {
+            
+            if savedUser.id != 0 {
+                print(savedUser)
+                let userId = savedUser.id!
+            }
+        }
     }
     
     // ON Navigate to Dashboard screen
